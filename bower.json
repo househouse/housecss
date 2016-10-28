@@ -1,18 +1,22 @@
 {
   "name": "housecss",
   "description": "A Functional CSS Library Built for Rapid Iteration",
-  "main": "css/",
+  "main": [
+    "css/",
+    "scss/"
+  ],
   "authors": [
-    "Ben Groulx",
-    "Sean Durfee"
+    "Ben Groulx <bengroulx.com>",
+    "Sean Durfee <durfee.me>"
   ],
   "license": "MIT",
   "keywords": [
     "css",
+    "scss",
+    "sass",
     "design",
     "system",
     "responsive",
-    "design"
   ],
   "homepage": "http://house-house.design",
   "ignore": [
@@ -21,5 +25,6 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "moduleType": []
 }
