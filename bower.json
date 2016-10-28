@@ -1,0 +1,25 @@
+{
+  "name": "housecss",
+  "description": "A Functional CSS Library Built for Rapid Iteration",
+  "main": "css/",
+  "authors": [
+    "Ben Groulx",
+    "Sean Durfee"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "design",
+    "system",
+    "responsive",
+    "design"
+  ],
+  "homepage": "http://house-house.design",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
