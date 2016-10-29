@@ -1,19 +1,26 @@
-
 // Styles
 // ===
 //
-// Oh, hello. I didn’t see you there. Welcome to the beautiful, happy wonderland
-// that is this stylesheet. Our CSS follows the following rules / philosophies:
+// Welcome to housecss! This functional CSS framework should be used as a
+// foundation for you and your team to get set up and working on a project as
+// quickly aspossible. Whether you are expanding housecss locally, or
+// contributing back upstream to the housecss repo, we encourage you write CSS
+// according our code guidelines and conventions:
 //
-//  1. Write CSS as if someone is using it to learn how code; it needs to be
-//     sensible and learnable for our new front-end developers (and, eventually,
-//     any other designers that joined our team), who would be making use of it
-//     as well.
-//  2. Aim for writing content-agnostic classes. In other words, content should
-//     not be dictacting style. That’s why we
-//  3. Write your HTML separately from your CSS; when these styles are turned
-//     off, content should be formatted and arranged in a hierarchy that is
-//     logical and semantic.
+// 1. Write SCSS (and csCSSs) as if someone is using it to learn how code. It
+//    needs to be sensible and learnable for new front-end developers and
+//    designers — everyone should be able to get going with housecss speedily.
+//    We acheive this by writing well-documented code.
+// 2. Housecss is content-agnostic, meaning HTML and CSS are completele separate
+//    from one another. If you hide all styles from your template, the HTML
+//    should be well-structured and semantically correct, formatted and arranged
+//    in a logical hierarchy. That also means classes should be self-documenting
+//    and independant of elements. The exception is components, which are
+//    directly coupled to markup or other styles.
+// 3. Follow the Code of Conduct at all times.
+//
+// Note: When contributing back upstream, compile your scss to css with:
+//       sass --watch scss:css --style compact
 
 
 // Settings
@@ -27,7 +34,6 @@
 @import 'settings/extends';
 @import 'settings/responsive';
 @import 'settings/type-scale';
-// @import 'settings/syntax-highlighting';
 
 
 // Base
