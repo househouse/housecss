@@ -1,32 +1,20 @@
 // Utilities: Spacing (Margin & Padding)
 // ===
 //
-
+// We run through three loops here to get all of our margin and padding sizes /
+// directions. The loop starts at the bottom with `generate-spacing-classes`.
+// `$size` gets called into the direction loop, which spits each direction
+// within the size category into the spacing class generator. The result is a
+// utility prefixed class for each direction and size for both padding and
+// margin.
+//
+// i.e. .u-padding-bottom-xs { padding-bottom: $space--very-small; }
+// i.e. .u-margin-top-xl { margin-top: $space--very-large; }
 
 $attribute-map: (
     margin,
     padding,
 );
-
-$direction-map: (
-    top: t,
-    left: l,
-    right: r,
-    bottom: b,
-);
-
-
-// We run through three loops here to get all of our margin and padding sizes / directions
-// The loop starts at the bottom with `generate-spacing-classes`. `$size` gets called into 
-// the direction loop, which spits each direction within the size category into the spacing
-// class generator. 
-// Our end result a utility prefixed class for each direction and size for 
-// both padding and margin.
-// 
-// E.g.:
-// 
-// .u-padding-bottom-xs { padding-bottom: $space--very-small; }
-// .u-margin-top-xl { margin-top: $space--very-large; }
 
 @mixin spacing($direction, $size) {
     @each $attribute in $attribute-map {
@@ -49,4 +37,3 @@ $direction-map: (
 }
 
 @include generate-spacing-classes;
-

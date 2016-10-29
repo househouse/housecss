@@ -132,6 +132,7 @@ $content-area-map: (
 // ---
 
 $dimensions-map: (
+    0: 0,
     1of4: round(100%/4),
     1of3: round(100%/3),
     half: round(100%/2),
@@ -145,3 +146,14 @@ $dimensions-map: (
 // ---
 
 $border-radius: $unit / ($configure--base-ratio * 3);
+
+
+// Direction Variables
+// ---
+
+$direction-map: (
+    top,
+    left,
+    right,
+    bottom,
+);

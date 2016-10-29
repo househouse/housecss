@@ -276,6 +276,9 @@ a {
 .u-clip {
   overflow: hidden; }
 
+.u-0-width {
+  width: 0; }
+
 .u-1of4-width {
   width: 25%; }
 
@@ -293,6 +296,9 @@ a {
 
 .u-full-width {
   width: 100%; }
+
+.u-0-height {
+  height: 0; }
 
 .u-1of4-height {
   height: 25%; }
@@ -408,13 +414,13 @@ a {
   z-index: 1000; }
 
 .u-measure-narrow {
-  max-width: calc(30rem - 10rem); }
+  max-width: calc(30rem - ($unit*10)); }
 
 .u-measure-medium {
-  max-width: calc(45rem - 10rem); }
+  max-width: calc(45rem - ($unit*10)); }
 
 .u-measure-wide {
-  max-width: calc(60rem - 10rem); }
+  max-width: calc(60rem - ($unit*10)); }
 
 .u-margin-top-xs {
   margin-top: 0.25rem; }

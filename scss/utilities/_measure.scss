@@ -1,10 +1,8 @@
-// Utility: Measure
+// Utilities: Measure
 // ===
-
-$measure--reset: $unit*10;
 
 @each $content-area-name, $content-area-width in $content-area-map {
     .u-measure-#{$content-area-name} {
-        max-width: calc(#{$content-area-width} - #{$measure--reset});
+        max-width: calc(#{$content-area-width} - ($unit*10));
     }
 }
