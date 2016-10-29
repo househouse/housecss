@@ -1,0 +1,159 @@
+// Global Variables
+// ===
+
+
+// Configure
+// ---
+
+// Everything is based off this define unit and ratio
+$configure--base-unit: 1rem;
+$configure--base-ratio: 1.125;
+
+// All text is based off this font size
+$configure--text-size: 1rem;
+
+// Choose your base typographic styles
+$configure--primary-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+$configure--secondary-font: 'Georgia', serif;
+
+$configure--text-weight: 300;
+$configure--text-bold: 700;
+
+// Choose the colours of your entire project
+$configure--primary-color: #3c485d;
+$configure--secondary-color: #efe8d8;
+$configure--accent-color: blue;
+
+
+
+
+// ============================================================================
+
+
+
+
+// Size Variables
+// ---
+
+$unit: $configure--base-unit;
+$sub-unit: $unit / 2;
+
+
+// Type Variables
+// ---
+//
+// Note: To set font sizes, use the typographic scale found in the
+//       _type-scale.scss partial.
+
+$font-family--base: $configure--primary-font;
+$font-family--other: $configure--secondary-font;
+$font-family--emoji: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+$font-family--mono: 'Menlo' monospace;
+
+$font-family--base: $configure--primary-font;
+$font-family--other: $configure--secondary-font;
+
+$font-size--base: $configure--text-size;
+
+$font-weight--base: $configure--text-weight;
+$font-weight--bold: $configure--text-bold;
+
+$line-height--base: ($configure--base-ratio * 1.4);
+$line-height--tight: $configure--base-ratio;
+
+
+// Colour Variables
+// ---
+
+$primary-color:     $configure--primary-color;
+$secondary-color:   $configure--secondary-color;
+$black:             mix(#000, mix(#000, mix(#000, $configure--primary-color)));
+$white:             mix(#fff, mix(#fff, mix(#fff, $configure--primary-color)));
+
+$color-map: (
+    primary: $primary-color,
+    secondary: $secondary-color,
+    black: $black,
+    white: $white,
+);
+
+
+// Size Variables
+// ---
+
+$space--very-small: $unit/4;
+$space--small: $unit/2;
+$space--base: $unit;
+$space--large: $unit*2;
+$space--very-large: $unit*4;
+
+$size-map: (
+    xs: $space--very-small,
+    sm: $space--small,
+    md: $space--base,
+    lg: $space--large,
+    xl: $space--very-large,
+);
+
+
+// Z Axis
+// ---
+
+$z0-depth: -1;
+$z1-depth: 1;
+$z2-depth: 10;
+$z3-depth: 100;
+$z4-depth: 1000;
+
+$z-map: (
+    under: $z0-depth,
+    basic: $z1-depth,
+    stack: $z2-depth,
+    shade: $z3-depth,
+    modal: $z4-depth,
+);
+
+
+// Width of the content area
+// ---
+
+$content-area--narrow: $unit*30;
+$content-area--medium: $unit*45;
+$content-area--wide: $unit*60;
+
+$content-area-map: (
+    narrow: $content-area--narrow,
+    medium: $content-area--medium,
+    wide: $content-area--wide,
+);
+
+
+// Dimensions
+// ---
+
+$dimensions-map: (
+    0: 0,
+    1of4: round(100%/4),
+    1of3: round(100%/3),
+    half: round(100%/2),
+    2of3: round(100%/1.5151),
+    3of4: round(100%/1.3333),
+    full: round(100%/1),
+);
+
+
+// Style Variables
+// ---
+
+$border-radius: $unit / ($configure--base-ratio * 3);
+
+
+// Direction Variables
+// ---
+
+$direction-map: (
+    top,
+    left,
+    right,
+    bottom,
+);

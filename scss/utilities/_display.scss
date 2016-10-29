@@ -1,0 +1,61 @@
+// Utilities: Display
+// ===
+
+
+// Display
+// ---
+
+.u-block {
+    display: block;
+}
+
+.u-inline-block {
+    display: inline-block;
+}
+
+.u-clip {
+    overflow: hidden;
+}
+
+
+// Fluid Sizes
+// ---
+
+@each $dimensions-name, $dimensions-value in $dimensions-map {
+    .u-#{$dimensions-name}-width {
+        width: $dimensions-value;
+    }
+}
+
+@each $dimensions-name, $dimensions-value in $dimensions-map {
+    .u-#{$dimensions-name}-height {
+        height: $dimensions-value;
+    }
+}
+
+
+// Viewport Sizes
+// ---
+
+.u-full-vw {
+    width: 100vw;
+}
+
+.u-full-vh {
+    height: 100vh;
+}
+
+
+// Visibility
+// ---
+
+.u-visually-hidden {
+    position: absolute;
+
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+}

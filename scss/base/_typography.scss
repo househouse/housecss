@@ -1,0 +1,69 @@
+// Global Typographic Styles
+// ===
+
+body {
+    @extend %type-copy;
+}
+
+h1 {
+    @extend %type-headline;
+}
+
+h2 {
+    @extend %type-subheadline;
+}
+
+h3 {
+    @extend %type-title;
+}
+
+h4,
+h5,
+h6 {
+    @extend %type-subtitle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-family--other;
+    font-weight: $font-weight--base;
+    line-height: $line-height--tight;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+q,
+blockquote {
+    quotes: none;
+
+    &::before,
+    &::after {
+        content: '';
+    }
+}
+
+a {
+    outline: none;
+
+    color: inherit;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        background: $primary-color;
+
+        color: $secondary-color;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,76 @@
+// Utilities: Layout
+// ---
+
+.u-context {
+    position: relative;
+}
+
+.u-position {
+    position: absolute;
+}
+
+.u-fixed {
+    position: fixed;
+}
+
+
+// Center In Parent
+// ---
+
+.u-center {
+    @extend %x-center;
+}
+
+
+// Cover Parent
+// ---
+
+.u-cover {
+    @extend %x-cover;
+}
+
+
+// X & Y Index Positioning
+// ---
+
+.u-t-0 {
+    top: map-get($dimensions-map, 0);
+}
+
+.u-t-50p {
+    top: map-get($dimensions-map, half);
+}
+
+.u-l-0 {
+    left: map-get($dimensions-map, 0);
+}
+
+.u-l-50p {
+    left: map-get($dimensions-map, half);
+}
+
+.u-b-0 {
+    bottom: map-get($dimensions-map, 0);
+}
+
+.u-b-50p {
+    bottom: map-get($dimensions-map, half);
+}
+
+.u-r-0 {
+    right: map-get($dimensions-map, 0);
+}
+
+.u-r-50p {
+    right: map-get($dimensions-map, half);
+}
+
+
+// Z Index Positioning
+// ---
+
+@each $layer-name, $layer-value in $z-map {
+    .u-z-#{$layer-name} {
+        z-index: $layer-value;
+    }
+}
