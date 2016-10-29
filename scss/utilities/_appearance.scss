@@ -26,17 +26,17 @@
 // --
 
 .u-bleed-top {
-    margin-top: -$unit;
+    margin-top: -$space--base;
 }
 
 .u-bleed-bottom {
-    margin-bottom: -$unit;
+    margin-bottom: -$space--base;
 }
 
 .u-bleed-start {
-    margin-left: -$unit;
+    margin-left: -$space--base;
 }
 
 .u-bleed-end {
-    margin-right: -$unit;
+    margin-right: -$space--base;
 }

@@ -25,17 +25,20 @@
 
 // Text Style
 // ---
+//
+// 1. The same style could be applied. Think about what may be more semantically
+//    correct for your specific situation.
 
 .u-text-weight-normal {
     font-weight: $font-weight--base;
 }
 
 .u-bold {
-    font-weight: $font-weight--bold;
+    font-weight: $font-weight--bold; // 1
 }
 
 .u-italic {
-    font-style: italic;
+    font-style: italic; // 1
 }
 
 
