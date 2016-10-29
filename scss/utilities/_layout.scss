@@ -69,22 +69,8 @@
 // Z Index Positioning
 // ---
 
-.u-z0 {
-    z-index: $z0-depth;
-}
-
-.u-z1 {
-    z-index: $z1-depth;
-}
-
-.u-z2 {
-    z-index: $z2-depth;
-}
-
-.u-z3 {
-    z-index: $z3-depth;
-}
-
-.u-z4 {
-    z-index: $z4-depth;
+@each $layer-name, $layer-value in $z-map {
+    .u-z-#{$layer-name} {
+        z-index: $layer-value;
+    }
 }

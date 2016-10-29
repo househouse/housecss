@@ -34,8 +34,8 @@ $line-height--tight: 1.15;
 
 $primary-color:     #efe8d8;
 $secondary-color:   #3c485d;
-$black:             darken($dark-blue, 10%);
-$white:             lighten($beige, 10%);
+$white:             lighten($primary-color, 10%);
+$black:             darken($secondary-color, 10%);
 
 $color-map: (
     black: $black,
@@ -86,10 +86,10 @@ $content-area--small: $unit*30;
 $content-area--medium: $unit*45;
 $content-area--large: $unit*60;
 
-$content-map: (
-    small: $content-area--small,
-    medium: $content-area--medium,
-    large: $content-area--large,
+$content-area-map: (
+    narrow: $content-area--small,
+    base: $content-area--medium,
+    wide: $content-area--large,
 );
 
 
