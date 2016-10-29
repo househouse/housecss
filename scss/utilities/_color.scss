@@ -1,19 +1,6 @@
 // Utilities: Text Color
 // ===
 
-
-// Map
-// ---
-
-$color-map: (
-    black: $black,
-    white: $white,
-);
-
-
-// Iterate
-// ---
-
 @each $color-name, $color-value in $color-map {
     .u-#{$color-name} {
         color: $color-value;

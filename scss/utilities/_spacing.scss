@@ -20,14 +20,6 @@ $direction-map: (
     bottom: b,
 );
 
-$size-map: (
-    xs: $space--very-small,
-    sm: $space--small,
-    md: $space--base,
-    lg: $space--large,
-    xl: $space--very-large,
-);
-
 @mixin spacing($direction, $size) {
     @each $attribute in $attribute-map {
         .u-#{$attribute}-#{$direction}-#{$size} {

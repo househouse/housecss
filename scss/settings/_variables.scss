@@ -32,20 +32,15 @@ $line-height--tight: 1.15;
 // Colour Variables
 // ---
 
-// Defaults
-$beige: #efe8d8;
-$dark-blue: #3c485d;
+$primary-color:     #efe8d8;
+$secondary-color:   #3c485d;
+$black:             darken($dark-blue, 10%);
+$white:             lighten($beige, 10%);
 
-// Pastels
-$pastel-blue: #668de5;
-$pastel-pink: #ed6d79;
-$pastel-green: #67eebd;
-
-// Neutrals
-$black: darken($dark-blue, 10%);
-$white: lighten($beige, 10%);
-
-
+$color-map: (
+    black: $black,
+    white: $white,
+);
 
 
 // Size Variables
@@ -57,19 +52,13 @@ $space--base: $unit;
 $space--large: $unit*2;
 $space--very-large: $unit*4;
 
-
-// Width of the content area
-// ---
-
-$content-area--small: 30em;
-$content-area--medium: 45em;
-$content-area--large: 60em;
-
-
-// Style Variables
-// ---
-
-$border-radius: $unit / 4;
+$size-map: (
+    xs: $space--very-small,
+    sm: $space--small,
+    md: $space--base,
+    lg: $space--large,
+    xl: $space--very-large,
+);
 
 
 // Z Axis
@@ -80,3 +69,31 @@ $z1-depth: 1;
 $z2-depth: 10;
 $z3-depth: 100;
 $z4-depth: 1000;
+
+$z-map: (
+    under: $z0-depth,
+    basic: $z1-depth,
+    stack: $z2-depth,
+    shade: $z3-depth,
+    modal: $z4-depth,
+);
+
+
+// Width of the content area
+// ---
+
+$content-area--small: $unit*30;
+$content-area--medium: $unit*45;
+$content-area--large: $unit*60;
+
+$content-map: (
+    small: $content-area--small,
+    medium: $content-area--medium,
+    large: $content-area--large,
+);
+
+
+// Style Variables
+// ---
+
+$border-radius: $unit / 4;
