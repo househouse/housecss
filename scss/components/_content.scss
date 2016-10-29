@@ -22,4 +22,12 @@ $content--rhythm: $unit;
     > *:not(:last-child) {
         margin-bottom: $content--rhythm;
     }
+
+    ol {
+        list-style: lower-latin;
+    }
+
+    ul {
+        list-style: circle;
+    }
 }
