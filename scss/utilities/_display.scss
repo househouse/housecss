@@ -21,28 +21,16 @@
 // Fluid Sizes
 // ---
 
-.u-full-width {
-    width: 100%;
+@each $dimensions-name, $dimensions-value in $dimensions-map {
+    .u-#{$dimensions-name}-width {
+        width: $dimensions-value;
+    }
 }
 
-.u-half-width {
-    width: 50%;
-}
-
-.u-quarter-width {
-    width: 25%;
-}
-
-.u-full-height {
-    height: 100%;
-}
-
-.u-half-height {
-    height: 50%;
-}
-
-.u-quarter-height {
-    height: 25%;
+@each $dimensions-name, $dimensions-value in $dimensions-map {
+    .u-#{$dimensions-name}-height {
+        height: $dimensions-value;
+    }
 }
 
 
