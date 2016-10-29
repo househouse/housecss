@@ -7,19 +7,19 @@
 // contributing back upstream to the housecss repo, we encourage you write CSS
 // according our code guidelines and conventions:
 //
-// 1. Write SCSS (and csCSSs) as if someone is using it to learn how code. It
+// 1. Write SCSS (and CSS) as if someone is using it to learn how code. It
 //    needs to be sensible and learnable for new front-end developers and
 //    designers — everyone should be able to get going with housecss speedily.
-//    We acheive this by writing well-documented code.
+//    We achieve this by writing well-documented code.
 // 2. Housecss is content-agnostic, meaning HTML and CSS are completele separate
 //    from one another. If you hide all styles from your template, the HTML
 //    should be well-structured and semantically correct, formatted and arranged
 //    in a logical hierarchy. That also means classes should be self-documenting
-//    and independant of elements. The exception is components, which are
+//    and independent of elements. The exception is components, which are
 //    directly coupled to markup or other styles.
 // 3. Follow the Code of Conduct at all times.
 //
-// Note: When contributing back upstream, compile your scss to css with:
+// Note: When contributing back upstream, compile your SCSS to CSS with:
 //       sass --watch scss:css --style compact
 
 
