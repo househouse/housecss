@@ -1,0 +1,74 @@
+// Mixins
+// ===
+
+
+// Media Queries
+// ---
+//
+// Use media queries like this:
+// @include media-query($content-area--medium) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+
+@mixin media-query($device) {
+    @media screen and (min-width: $device) {
+        @content;
+    }
+}
+
+
+
+
+
+// Generate Breakpoint Prefixes
+// ---
+// this mixin adds breakpoint prefixes
+// from the list of breakpoints to the
+// beginning of a block of css selectors
+
+// all of the breakpoint names and values
+// we may use this a lot, keep them somwhere safe
+$breakpoints: (
+    xs: null,
+    sm: 40rem,
+    md: 52rem,
+    lg: 64rem,
+);
+
+// returns the apropriate media query
+// for the given breakpoint name
+@mixin media-query($breakpoint) {
+    @if (map-get($breakpoints, $breakpoint)) == null {
+        @content;
+    } @else {
+        @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+            @content;
+        }
+    }
+}
+
+// nest content inside breakpoint prefix classes
+// in the apropriate media query block
+@mixin generate-breakpoint-prefixes {
+    @if ($generate-responsive-classes == true) {
+        // generate prefixed classes
+        @each $breakpoint-name, $breakpoint-value in $breakpoints {
+            $breakpoint-prefix: "#{$breakpoint-name}-";
+
+            @include media-query($breakpoint-name) {
+                // Columns
+                .#{$breakpoint-prefix} {
+                    @content;
+                }
+            }
+        }
+    } @else {
+        // only return xs styles
+        .xs- {
+            @content;
+        }
+    }
+}

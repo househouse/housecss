@@ -1,0 +1,62 @@
+// Utilities: Spacing (Margin & Padding)
+// ===
+//
+// TODO:
+// - properly loop through the map values to use the shorthand form for naming
+//   conventions (i.e. u-m-t-xs)... or other appropriate name
+// - write an @each loop to iterate through all values instead of writing all
+//   the @includes
+
+
+$attribute-map: (
+    margin,
+    padding,
+);
+
+$direction-map: (
+    top: t,
+    left: l,
+    right: r,
+    bottom: b,
+);
+
+$size-map: (
+    xs: $space--very-small,
+    sm: $space--small,
+    md: $space--base,
+    lg: $space--large,
+    xl: $space--very-large,
+);
+
+@mixin spacing($direction, $size) {
+    @each $attribute in $attribute-map {
+        .u-#{$attribute}-#{$direction}-#{$size} {
+            #{$attribute}-#{$direction}: #{map-get($size-map, $size)};
+        }
+    }
+}
+
+
+@include spacing(top, xs);
+@include spacing(top, sm);
+@include spacing(top, md);
+@include spacing(top, lg);
+@include spacing(top, xl);
+
+@include spacing(left, xs);
+@include spacing(left, sm);
+@include spacing(left, md);
+@include spacing(left, lg);
+@include spacing(left, xl);
+
+@include spacing(right, xs);
+@include spacing(right, sm);
+@include spacing(right, md);
+@include spacing(right, lg);
+@include spacing(right, xl);
+
+@include spacing(bottom, xs);
+@include spacing(bottom, sm);
+@include spacing(bottom, md);
+@include spacing(bottom, lg);
+@include spacing(bottom, xl);
