@@ -1,7 +1,4 @@
 node_modules
 npm-debug.log
 .DS_STORE
-
-# codekit junk
-.codekit-cache
-config.codekit
+.sass-cache
