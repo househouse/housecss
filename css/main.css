@@ -247,23 +247,41 @@ a {
 .u-clip {
   overflow: hidden; }
 
-.u-full-width {
-  width: 100%; }
+.u-1of4-width {
+  width: 25%; }
+
+.u-1of3-width {
+  width: 33%; }
 
 .u-half-width {
   width: 50%; }
 
-.u-quarter-width {
-  width: 25%; }
+.u-2of3-width {
+  width: 66%; }
 
-.u-full-height {
-  height: 100%; }
+.u-3of4-width {
+  width: 75%; }
+
+.u-full-width {
+  width: 100%; }
+
+.u-1of4-height {
+  height: 25%; }
+
+.u-1of3-height {
+  height: 33%; }
 
 .u-half-height {
   height: 50%; }
 
-.u-quarter-height {
-  height: 25%; }
+.u-2of3-height {
+  height: 66%; }
+
+.u-3of4-height {
+  height: 75%; }
+
+.u-full-height {
+  height: 100%; }
 
 .u-full-vw {
   width: 100vw; }

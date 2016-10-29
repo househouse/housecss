@@ -93,6 +93,19 @@ $content-area-map: (
 );
 
 
+// Dimensions
+// ---
+
+$dimensions-map: (
+    1of4: round(100%/4),
+    1of3: round(100%/3),
+    half: round(100%/2),
+    2of3: round(100%/1.5151),
+    3of4: round(100%/1.3333),
+    full: round(100%/1),
+);
+
+
 // Style Variables
 // ---
 
