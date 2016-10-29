@@ -1,12 +1,6 @@
 // Utilities: Spacing (Margin & Padding)
 // ===
 //
-// TODO:
-// - properly loop through the map values to use the shorthand form for naming
-//   conventions (i.e. u-m-t-xs)... or other appropriate name
-// - write an @each loop to iterate through all values instead of writing all
-//   the @includes
-
 
 
 $attribute-map: (
@@ -28,7 +22,9 @@ $direction-map: (
 // class generator. 
 // Our end result a utility prefixed class for each direction and size for 
 // both padding and margin.
+// 
 // E.g.:
+// 
 // .u-padding-bottom-xs { padding-bottom: $space--very-small; }
 // .u-margin-top-xl { margin-top: $space--very-large; }
 
@@ -54,26 +50,3 @@ $direction-map: (
 
 @include generate-spacing-classes;
 
-// @include spacing(top, xs);
-// @include spacing(top, sm);
-// @include spacing(top, md);
-// @include spacing(top, lg);
-// @include spacing(top, xl);
-
-// @include spacing(left, xs);
-// @include spacing(left, sm);
-// @include spacing(left, md);
-// @include spacing(left, lg);
-// @include spacing(left, xl);
-
-// @include spacing(right, xs);
-// @include spacing(right, sm);
-// @include spacing(right, md);
-// @include spacing(right, lg);
-// @include spacing(right, xl);
-
-// @include spacing(bottom, xs);
-// @include spacing(bottom, sm);
-// @include spacing(bottom, md);
-// @include spacing(bottom, lg);
-// @include spacing(bottom, xl);

@@ -3,6 +3,6 @@
 
 @each $color-name, $color-value in $color-map {
     .u-bg-#{$color-name} {
-        color: $color-value;
+        background-color: $color-value;
     }
 }
