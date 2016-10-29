@@ -8,6 +8,7 @@
 //   the @includes
 
 
+
 $attribute-map: (
     margin,
     padding,
@@ -20,6 +21,17 @@ $direction-map: (
     bottom: b,
 );
 
+
+// We run through three loops here to get all of our margin and padding sizes / directions
+// The loop starts at the bottom with `generate-spacing-classes`. `$size` gets called into 
+// the direction loop, which spits each direction within the size category into the spacing
+// class generator. 
+// Our end result a utility prefixed class for each direction and size for 
+// both padding and margin.
+// E.g.:
+// .u-padding-bottom-xs { padding-bottom: $space--very-small; }
+// .u-margin-top-xl { margin-top: $space--very-large; }
+
 @mixin spacing($direction, $size) {
     @each $attribute in $attribute-map {
         .u-#{$attribute}-#{$direction}-#{$size} {
@@ -28,27 +40,40 @@ $direction-map: (
     }
 }
 
+@mixin direction-wrapper($size) {
+    @each $direction, $direction-abb in $direction-map {
+        @include spacing(#{$direction}, $size);
+    }
+}
 
-@include spacing(top, xs);
-@include spacing(top, sm);
-@include spacing(top, md);
-@include spacing(top, lg);
-@include spacing(top, xl);
+@mixin generate-spacing-classes {
+    @each $size, $size-units in $size-map {
+        @include direction-wrapper(#{$size});
+    }
+}
 
-@include spacing(left, xs);
-@include spacing(left, sm);
-@include spacing(left, md);
-@include spacing(left, lg);
-@include spacing(left, xl);
+@include generate-spacing-classes;
 
-@include spacing(right, xs);
-@include spacing(right, sm);
-@include spacing(right, md);
-@include spacing(right, lg);
-@include spacing(right, xl);
+// @include spacing(top, xs);
+// @include spacing(top, sm);
+// @include spacing(top, md);
+// @include spacing(top, lg);
+// @include spacing(top, xl);
 
-@include spacing(bottom, xs);
-@include spacing(bottom, sm);
-@include spacing(bottom, md);
-@include spacing(bottom, lg);
-@include spacing(bottom, xl);
+// @include spacing(left, xs);
+// @include spacing(left, sm);
+// @include spacing(left, md);
+// @include spacing(left, lg);
+// @include spacing(left, xl);
+
+// @include spacing(right, xs);
+// @include spacing(right, sm);
+// @include spacing(right, md);
+// @include spacing(right, lg);
+// @include spacing(right, xl);
+
+// @include spacing(bottom, xs);
+// @include spacing(bottom, sm);
+// @include spacing(bottom, md);
+// @include spacing(bottom, lg);
+// @include spacing(bottom, xl);
