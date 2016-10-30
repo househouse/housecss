@@ -71,6 +71,22 @@ a:hover { background: #3c485d; color: #efe8d8; text-decoration: none; }
 
 .u-bg-white { background-color: #e7e9eb; }
 
+.u-bg-tu { background-color: #36465d; }
+
+.u-bg-fb { background-color: #3b5998; }
+
+.u-bg-li { background-color: #0077b5; }
+
+.u-bg-in { background-color: #517fa4; }
+
+.u-bg-tw { background-color: #55acee; }
+
+.u-bg-go { background-color: #dd4b39; }
+
+.u-bg-yt { background-color: #cd201f; }
+
+.u-bg-pi { background-color: #bd081c; }
+
 .u-blue { color: #3c485d; }
 
 .u-beige { color: #efe8d8; }
@@ -78,6 +94,22 @@ a:hover { background: #3c485d; color: #efe8d8; text-decoration: none; }
 .u-black { color: #08090c; }
 
 .u-white { color: #e7e9eb; }
+
+.u-tu { color: #36465d; }
+
+.u-fb { color: #3b5998; }
+
+.u-li { color: #0077b5; }
+
+.u-in { color: #517fa4; }
+
+.u-tw { color: #55acee; }
+
+.u-go { color: #dd4b39; }
+
+.u-yt { color: #cd201f; }
+
+.u-pi { color: #bd081c; }
 
 .u-block { display: block; }
 
