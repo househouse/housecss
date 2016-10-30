@@ -80,3 +80,19 @@
         z-index: $layer-value;
     }
 }
+
+
+// Floating
+// ---
+
+.u-float-left {
+    float: left;
+}
+
+.u-float-right {
+    float: right;
+}
+
+.u-float-none {
+    float: none;
+}
