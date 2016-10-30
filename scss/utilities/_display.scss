@@ -22,13 +22,13 @@
 // ---
 
 @each $dimensions-name, $dimensions-value in $dimensions-map {
-    .u-#{$dimensions-name}-width {
+    .u-width-#{$dimensions-name} {
         width: $dimensions-value;
     }
 }
 
 @each $dimensions-name, $dimensions-value in $dimensions-map {
-    .u-#{$dimensions-name}-height {
+    .u-height-#{$dimensions-name} {
         height: $dimensions-value;
     }
 }
