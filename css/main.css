@@ -344,11 +344,11 @@ a:hover { background-color: blue; color: #e7e9eb; text-decoration: none; }
 
 .u-z-modal { z-index: 1000; }
 
-.u-measure-narrow { max-width: calc(30rem - (*10)); }
+.u-measure-narrow { max-width: calc(30rem - (1rem * 10)); }
 
-.u-measure-medium { max-width: calc(45rem - (*10)); }
+.u-measure-medium { max-width: calc(45rem - (1rem * 10)); }
 
-.u-measure-wide { max-width: calc(60rem - (*10)); }
+.u-measure-wide { max-width: calc(60rem - (1rem * 10)); }
 
 .u-margin-top-xs { margin-top: 0.25rem; }
 
