@@ -10,7 +10,7 @@
 .c-text-content {
 
     > *:not(:last-child) {
-        margin-bottom: map-get($size-map, base);
+        margin-bottom: map-get($size-map, md);
     }
 
     ol {

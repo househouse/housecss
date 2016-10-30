@@ -452,6 +452,7 @@ a:hover { background-color: blue; color: #e7e9eb; text-decoration: none; }
 
 .c-button { min-width: 44px; min-height: 44px; background: blue; cursor: pointer; appearance: none; }
 
+.c-text-content > *:not(:last-child) { margin-bottom: 1rem; }
 .c-text-content ol { list-style: lower-latin; }
 .c-text-content ul { list-style: circle; }
 
