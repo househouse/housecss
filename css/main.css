@@ -47,11 +47,15 @@ a { outline: none; color: blue; text-decoration: underline; }
 a:hover, a:focus { outline: none; }
 a:hover { background-color: blue; color: #e7e9eb; text-decoration: none; }
 
-.u-rounded { border-radius: 0.2963rem; }
+.u-rounded-corners { border-radius: 0.2963rem; }
+
+.u-very-rounded-corners { border-radius: 1.125rem; }
 
 .u-circle { border-radius: 100%; }
 
 .u-half-transparent { opacity: 0.5; }
+
+.u-fully-transparent { opacity: 0; }
 
 .u-bg-primary { background-color: #3c485d; }
 

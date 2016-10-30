@@ -106,8 +106,9 @@ $dimensions-map: (
 
 // Style options
 $appearances-map: (
-    border-radius-base: $configure--base-unit / ($configure--base-ratio * 3),
-    border-radius-circle: 100%,
+    rounded-corners: $configure--base-unit / ($configure--base-ratio * 3),
+    very-rounded-corners: $configure--base-unit * $configure--base-ratio,
+    circle: 100%,
     half-transparent: 0.5,
     fully-transparent: 0,
 );

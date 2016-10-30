@@ -1,14 +1,22 @@
 // Utilities: Appearance
 // ---
 
-.u-rounded {
-    border-radius: map-get($appearances-map, border-radius-base);
+.u-rounded-corners {
+    border-radius: map-get($appearances-map, rounded-corners);
+}
+
+.u-very-rounded-corners {
+    border-radius: map-get($appearances-map, very-rounded-corners);
 }
 
 .u-circle {
-    border-radius: map-get($appearances-map, border-radius-circle);
+    border-radius: map-get($appearances-map, circle);
 }
 
 .u-half-transparent {
     opacity: map-get($appearances-map, half-transparent);
+}
+
+.u-fully-transparent {
+    opacity: map-get($appearances-map, fully-transparent);
 }
