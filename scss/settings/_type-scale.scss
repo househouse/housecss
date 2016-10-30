@@ -84,4 +84,8 @@ $type-scale--step-7: $type-scale--ratio * $type-scale--step-6;
 
 %type-small {
     font-size: $type-scale--base / $type-scale--ratio;
+
+    @include media-query($content-area--medium) {
+        font-size: calc(#{$type-scale--base} + 2.5 * (100vw - #{$content-area--medium}) / 400)
+    }
 }

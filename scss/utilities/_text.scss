@@ -5,7 +5,7 @@
 // Text Sizing
 // ---
 
-.u-text-size-normal {
+.u-text-size-base {
     @extend %type-copy;
 }
 
@@ -46,15 +46,15 @@
 // Text Alignment
 // ---
 
-.u-text-left {
+.u-align-left {
     text-align: left;
 }
 
-.u-text-center {
+.u-align-center {
     text-align: center;
 }
 
-.u-text-right {
+.u-align-right {
     text-align: right;
 }
 
@@ -62,15 +62,15 @@
 // Text Casing
 // ---
 
-.u-text-uppercase {
+.u-uppercase {
     text-transform: uppercase;
 }
 
-.u-text-lowercase {
+.u-lowercase {
     text-transform: lowercase;
 }
 
-.u-text-capitalize {
+.u-capitalize {
     text-transform: capitalize;
 }
 

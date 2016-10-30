@@ -71,8 +71,8 @@ $black:             mix(#000, mix(#000, mix(#000, $configure--primary-color)));
 $white:             mix(#fff, mix(#fff, mix(#fff, $configure--primary-color)));
 
 $color-map: (
-    primary: $primary-color,
-    secondary: $secondary-color,
+    blue: $primary-color,
+    beige: $secondary-color,
     black: $black,
     white: $white,
 );
