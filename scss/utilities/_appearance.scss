@@ -1,42 +1,14 @@
-// Utilities: Shape
+// Utilities: Appearance
 // ---
-
-
-// Shape
-// ---
-
-.u-circle {
-    border-radius: 100%;
-}
 
 .u-rounded {
-    border-radius: $border-radius;
+    border-radius: map-get($appearances-map, border-radius-base);
 }
 
-
-// Opacity
-// ---
+.u-circle {
+    border-radius: map-get($appearances-map, border-radius-circle);
+}
 
 .u-half-transparent {
-    opacity: 0.5;
-}
-
-
-// Bleed
-// --
-
-.u-bleed-top {
-    margin-top: -$space--base;
-}
-
-.u-bleed-bottom {
-    margin-bottom: -$space--base;
-}
-
-.u-bleed-start {
-    margin-left: -$space--base;
-}
-
-.u-bleed-end {
-    margin-right: -$space--base;
+    opacity: map-get($appearances-map, half-transparent);
 }

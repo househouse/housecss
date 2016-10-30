@@ -1,5 +1,6 @@
 // Utilities: Display
-// ===
+// ============================================================================
+
 
 
 // Display
@@ -58,4 +59,14 @@
     height: 1px;
     padding: 0;
     border: 0;
+}
+
+
+// Bleed
+// --
+
+@each $direction in $directions-map {
+    .u-bleed-#{$direction} {
+        margin-#{$direction}: -(map-get($size-map, md));
+    }
 }

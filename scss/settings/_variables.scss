@@ -1,9 +1,5 @@
-// Global Variables
-// ===
-
-
-// Configure
-// ---
+// Project-Wide Configurable Variables
+// ============================================================================
 
 // Everything is based off this define unit and ratio
 $configure--base-unit: 1rem;
@@ -15,7 +11,10 @@ $configure--text-size: 1rem;
 // Choose your base typographic styles
 $configure--primary-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
 $configure--secondary-font: 'Georgia', serif;
+$configure--code-font: 'Menlo' monospace;
+$configure--emoji-font: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
+// Choose your desired type weights
 $configure--text-weight: 300;
 $configure--text-bold: 700;
 
@@ -32,124 +31,69 @@ $configure--accent-color: blue;
 
 
 
-// Size Variables
-// ---
-
-$unit: $configure--base-unit;
-$sub-unit: $unit / 2;
-
-
-// Type Variables
-// ---
-//
-// Note: To set font sizes, use the typographic scale found in the
-//       _type-scale.scss partial.
-
-$font-family--base: $configure--primary-font;
-$font-family--other: $configure--secondary-font;
-$font-family--emoji: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-$font-family--mono: 'Menlo' monospace;
-
-$font-family--base: $configure--primary-font;
-$font-family--other: $configure--secondary-font;
-
-$font-size--base: $configure--text-size;
-
-$font-weight--base: $configure--text-weight;
-$font-weight--bold: $configure--text-bold;
-
-$line-height--base: ($configure--base-ratio * 1.4);
-$line-height--tight: $configure--base-ratio;
-
-
-// Colour Variables
-// ---
-
-$primary-color:     $configure--primary-color;
-$secondary-color:   $configure--secondary-color;
-$black:             mix(#000, mix(#000, mix(#000, $configure--primary-color)));
-$white:             mix(#fff, mix(#fff, mix(#fff, $configure--primary-color)));
-
-$tumblr:       #36465d;
-$facebook:     #3b5998;
-$linkedin:     #0077b5;
-$instagram:    #517fa4;
-$twitter:      #55acee;
-$google:       #dd4b39;
-$youtube:      #cd201f;
-$pinterest:    #bd081c;
-
-$color-map: (
-    blue:  $primary-color,
-    beige: $secondary-color,
-    black: $black,
-    white: $white,
-
-    tu: $tumblr,
-    fb: $facebook,
-    li: $linkedin,
-    in: $instagram,
-    tw: $twitter,
-    go: $google,
-    yt: $youtube,
-    pi: $pinterest,
-
-);
-
-
-// Size Variables
-// ---
-
-$space--very-small: $unit/4;
-$space--small: $unit/2;
-$space--base: $unit;
-$space--large: $unit*2;
-$space--very-large: $unit*4;
-
+// Size options
 $size-map: (
-    xs: $space--very-small,
-    sm: $space--small,
-    md: $space--base,
-    lg: $space--large,
-    xl: $space--very-large,
+    xs: $configure--base-unit/4,
+    sm: $configure--base-unit/2,
+    md: $configure--base-unit,
+    lg: $configure--base-unit*2,
+    xl: $configure--base-unit*4,
 );
 
+// Typeface options
+$typeface-map: (
+    primary: $configure--primary-font,
+    secondary: $configure--secondary-font,
+    emoji: $configure--emoji-font,
+    code: $configure--code-font,
+);
 
-// Z Axis
-// ---
+// Weight options
+$type-weight-map: (
+    base: $configure--text-weight,
+    bold: $configure--text-bold,
+);
 
-$z0-depth: -1;
-$z1-depth: 1;
-$z2-depth: 10;
-$z3-depth: 100;
-$z4-depth: 1000;
+// Leading options
+$leading-map: (
+    base: ($configure--base-ratio * 1.4),
+    tight: $configure--base-ratio,
+);
 
+// Colour options
+$color-map: (
+    primary:   $configure--primary-color,
+    secondary: $configure--secondary-color,
+    link:      $configure--accent-color,
+    black:     mix(#000, mix(#000, mix(#000, $configure--primary-color))),
+    white:     mix(#fff, mix(#fff, mix(#fff, $configure--primary-color))),
+    tu: #36465d,
+    fb: #3b5998,
+    li: #0077b5,
+    in: #517fa4,
+    tw: #55acee,
+    go: #dd4b39,
+    yt: #cd201f,
+    pi: #bd081c,
+);
+
+// Z-axis options
 $z-map: (
-    under: $z0-depth,
-    basic: $z1-depth,
-    stack: $z2-depth,
-    shade: $z3-depth,
-    modal: $z4-depth,
+    under: -1,
+    basic: 1,
+    stack: 10,
+    shade: 100,
+    modal: 1000,
 );
 
-
-// Width of the content area
-// ---
-
-$content-area--narrow: $unit*30;
-$content-area--medium: $unit*45;
-$content-area--wide: $unit*60;
-
+// Content area options
 $content-area-map: (
-    narrow: $content-area--narrow,
-    medium: $content-area--medium,
-    wide: $content-area--wide,
+    narrow: $configure--base-unit*30,
+    medium: $configure--base-unit*45,
+    wide:   $configure--base-unit*60,
 );
 
-
-// Dimensions
-// ---
-
+// Dimensions options
 $dimensions-map: (
     0: 0,
     1of4: round(100%/4),
@@ -160,16 +104,15 @@ $dimensions-map: (
     full: round(100%/1),
 );
 
+// Style options
+$appearances-map: (
+    border-radius-base: $configure--base-unit / ($configure--base-ratio * 3),
+    border-radius-circle: 100%,
+    half-transparent: 0.5,
+    fully-transparent: 0,
+);
 
-// Style Variables
-// ---
-
-$border-radius: $unit / ($configure--base-ratio * 3);
-
-
-// Direction Variables
-// ---
-
+// Direction options
 $directions-map: (
     top,
     left,

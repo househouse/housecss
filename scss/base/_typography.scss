@@ -1,5 +1,5 @@
 // Global Typographic Styles
-// ===
+// ============================================================================
 
 body {
     @extend %type-copy;
@@ -29,9 +29,9 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $font-family--other;
-    font-weight: $font-weight--base;
-    line-height: $line-height--tight;
+    font-family: map-get($typeface-map, secondary);
+    font-weight: map-get($type-weight-map, base);
+    line-height: map-get($leading-map, tight);
 }
 
 ol,
@@ -55,13 +55,13 @@ small {
 
 code,
 pre {
-    font-family: $font-family--mono;
+    font-family: map-get($typeface-map, mono);
 }
 
 a {
     outline: none;
 
-    color: inherit;
+    color: map-get($color-map, link);
     text-decoration: underline;
 
     &:hover,
@@ -70,9 +70,9 @@ a {
     }
 
     &:hover {
-        background: $primary-color;
+        background-color: map-get($color-map, link);
 
-        color: $secondary-color;
+        color: map-get($color-map, white);
         text-decoration: none;
     }
 }

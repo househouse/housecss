@@ -1,5 +1,5 @@
 // Utilities: Background
-// ===
+// ============================================================================
 
 @each $color-name, $color-value in $color-map {
     .u-bg-#{$color-name} {

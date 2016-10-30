@@ -1,5 +1,5 @@
 // Global Generic / Reset Styles
-// ===
+// ============================================================================
 
 *,
 *::after,
@@ -11,12 +11,12 @@ body {
     overflow: hidden;
     overflow-y: scroll;
 
-    background: $secondary-color;
+    background: map-get($color-map, secondary);
 
-    color: $primary-color;
-    font-family: $font-family--base, $font-family--emoji;
-    font-weight: $font-weight--base;
-    line-height: $line-height--base;
+    color: map-get($color-map, primary);
+    font-family: map-get($typeface-map, secondary), map-get($typeface-map, emoji);
+    font-weight: map-get($type-weight-map, base);
+    line-height: map-get($leading-map, base);
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

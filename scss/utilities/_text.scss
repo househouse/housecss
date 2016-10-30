@@ -1,5 +1,5 @@
 // Utilities: Text
-// ===
+// ============================================================================
 
 
 // Text Sizing
@@ -22,25 +22,23 @@
 }
 
 
-
-// Text Style
+// Text Styles
 // ---
 //
-// 1. The same style could be applied. Think about what may be more semantically
-//    correct for your specific situation.
+// 1. The same style could be applied by using an element. Think about what may
+//    be more semantically correct for your specific situation.
 
 .u-text-weight-normal {
-    font-weight: $font-weight--base;
+    font-weight: map-get($type-weight-map, base);
 }
 
 .u-bold {
-    font-weight: $font-weight--bold; // 1
+    font-weight: map-get($type-weight-map, bold); // 1
 }
 
 .u-italic {
     font-style: italic; // 1
 }
-
 
 
 // Text Alignment
