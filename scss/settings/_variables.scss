@@ -1,6 +1,9 @@
 // Project-Wide Configurable Variables
 // ============================================================================
 
+// set to false to make responsive mixin give only xs- versions of responsive classes
+$generate-responsive-classes: true !default;
+
 // Everything is based off this define unit and ratio
 $configure--base-unit: 1rem;
 $configure--base-ratio: 1.125;
@@ -12,7 +15,6 @@ $configure--text-size: 1rem;
 $configure--primary-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
 $configure--secondary-font: 'Georgia', serif;
 $configure--code-font: 'Menlo' monospace;
-$configure--emoji-font: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
 // Choose your desired type weights
 $configure--text-weight: 300;
@@ -26,10 +28,8 @@ $configure--accent-color: blue;
 
 
 
+// Project-Wide Options
 // ============================================================================
-
-
-
 
 // Size options
 $size-map: (
@@ -44,7 +44,6 @@ $size-map: (
 $typeface-map: (
     primary: $configure--primary-font,
     secondary: $configure--secondary-font,
-    emoji: $configure--emoji-font,
     code: $configure--code-font,
 );
 
@@ -91,6 +90,14 @@ $content-area-map: (
     narrow: $configure--base-unit*30,
     medium: $configure--base-unit*45,
     wide:   $configure--base-unit*60,
+);
+
+// Viewport breakpoints options
+$breakpoints: (
+    xs: null,
+    sm: $configure--base-unit*30,
+    md: $configure--base-unit*45,
+    lg: $configure--base-unit*60,
 );
 
 // Dimensions options

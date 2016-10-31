@@ -1,12 +1,40 @@
-// Mixins
+// Media Queries
 // ============================================================================
 
 
-// Media Queries
+// Old
 // ---
 
 @mixin media-query($device) {
     @media screen and (min-width: $device) {
         @content;
+    }
+}
+
+
+// ============================================================================
+
+
+// returns the apropriate media query for the given breakpoint name
+@mixin media-query($breakpoint) {
+    @if (map-get($breakpoints, $breakpoint)) == null {
+        @content;
+    } @else {
+        @media screen and (min-width: #{map-get($breakpoints, $breakpoint)}) {
+            @content;
+        }
+    }
+}
+
+// nest content inside breakpoint suffix classes in the apropriate media query block
+@mixin generate-breakpoint-suffixes {
+    @each $breakpoint-name, $breakpoint-value in $breakpoints {
+        $breakpoint-suffix: "at-#{$breakpoint-name}--";
+
+        @include media-query($breakpoint-name) {
+            .#{$breakpoint-suffix} {
+                @content;
+            }
+        }
     }
 }

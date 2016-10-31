@@ -17,22 +17,23 @@
 // Flex Layout
 // ---
 
-.u-align-middle {
-    align-items: center;
-}
+@include generate-breakpoint-suffixes {
+    &u-align-middle {
+        align-items: center;
+    }
 
-.u-justify-start {
-    justify-content: flex-start;
-}
+    &u-justify-start {
+        justify-content: flex-start;
+    }
 
-.u-justify-end {
-    justify-content: flex-end;
-}
+    &u-justify-end {
+        justify-content: flex-end;
+    }
 
-.u-justify-middle {
-    justify-content: center;
+    &u-justify-middle {
+        justify-content: center;
+    }
 }
-
 
 // Flexbox Children
 // ---
