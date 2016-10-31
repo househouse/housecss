@@ -1,9 +1,6 @@
 // Project-Wide Configurable Variables
 // ============================================================================
 
-// set to false to make responsive mixin give only xs- versions of responsive classes
-$generate-responsive-classes: true !default;
-
 // Everything is based off this define unit and ratio
 $configure--base-unit: 1rem;
 $configure--base-ratio: 1.125;
