@@ -1,14 +1,24 @@
-h1, .u-text-size-very-large { font-size: 1.60181rem; font-size: 1.80203rem; font-size: 2.02729rem; }
+h1, .u-text-size-very-large { font-size: 1.60181rem; }
+@media screen and (min-width: 45rem) { h1, .u-text-size-very-large { font-size: 1.80203rem; } }
+@media screen and (min-width: 60rem) { h1, .u-text-size-very-large { font-size: 2.02729rem; } }
 
-h2, .u-text-size-large { font-size: 1.26563rem; font-size: 1.42383rem; font-size: 1.60181rem; }
+h2, .u-text-size-large { font-size: 1.26563rem; }
+@media screen and (min-width: 45rem) { h2, .u-text-size-large { font-size: 1.42383rem; } }
+@media screen and (min-width: 60rem) { h2, .u-text-size-large { font-size: 1.60181rem; } }
 
-h3 { font-size: 1.42383rem; font-size: 1.60181rem; font-size: 1.80203rem; }
+h3 { font-size: 1.42383rem; }
+@media screen and (min-width: 45rem) { h3 { font-size: 1.60181rem; } }
+@media screen and (min-width: 60rem) { h3 { font-size: 1.80203rem; } }
 
-h4, h5, h6 { font-size: 1.125rem; font-size: 1.26563rem; font-size: 1.42383rem; }
+h4, h5, h6 { font-size: 1.125rem; }
+@media screen and (min-width: 45rem) { h4, h5, h6 { font-size: 1.26563rem; } }
+@media screen and (min-width: 60rem) { h4, h5, h6 { font-size: 1.42383rem; } }
 
-body, .u-text-size-base { font-size: 1rem; font-size: calc(1rem + 3 * (100vw - 45rem) / 400); }
+body, .u-text-size-base { font-size: 1rem; }
+@media screen and (min-width: 45rem) { body, .u-text-size-base { font-size: calc(1rem + 3 * (100vw - 45rem) / 400); } }
 
-small, .u-text-size-small { font-size: 0.88889rem; font-size: calc(1rem + 2.5 * (100vw - 45rem) / 400); }
+small, .u-text-size-small { font-size: 0.88889rem; }
+@media screen and (min-width: 45rem) { small, .u-text-size-small { font-size: calc(1rem + 2.5 * (100vw - 45rem) / 400); } }
 
 *, *::after, *::before { box-sizing: border-box; }
 
@@ -284,23 +294,23 @@ a:hover { background-color: blue; color: #e7e9eb; text-decoration: none; }
 
 .u-flex-column { flex-direction: column; }
 
-.at-xs--u-align-middle { align-items: center; }
-.at-xs--u-justify-start { justify-content: flex-start; }
-.at-xs--u-justify-end { justify-content: flex-end; }
-.at-xs--u-justify-middle { justify-content: center; }
+--xs .u-align-middle--xs { align-items: center; }
+--xs .u-justify-start--xs { justify-content: flex-start; }
+--xs .u-justify-end--xs { justify-content: flex-end; }
+--xs .u-justify-middle--xs { justify-content: center; }
 
-@media screen and (min-width: 30rem) { .at-sm--u-align-middle { align-items: center; }
-  .at-sm--u-justify-start { justify-content: flex-start; }
-  .at-sm--u-justify-end { justify-content: flex-end; }
-  .at-sm--u-justify-middle { justify-content: center; } }
-@media screen and (min-width: 45rem) { .at-md--u-align-middle { align-items: center; }
-  .at-md--u-justify-start { justify-content: flex-start; }
-  .at-md--u-justify-end { justify-content: flex-end; }
-  .at-md--u-justify-middle { justify-content: center; } }
-@media screen and (min-width: 60rem) { .at-lg--u-align-middle { align-items: center; }
-  .at-lg--u-justify-start { justify-content: flex-start; }
-  .at-lg--u-justify-end { justify-content: flex-end; }
-  .at-lg--u-justify-middle { justify-content: center; } }
+@media screen and (min-width: 30rem) { --sm .u-align-middle--sm { align-items: center; }
+  --sm .u-justify-start--sm { justify-content: flex-start; }
+  --sm .u-justify-end--sm { justify-content: flex-end; }
+  --sm .u-justify-middle--sm { justify-content: center; } }
+@media screen and (min-width: 45rem) { --md .u-align-middle--md { align-items: center; }
+  --md .u-justify-start--md { justify-content: flex-start; }
+  --md .u-justify-end--md { justify-content: flex-end; }
+  --md .u-justify-middle--md { justify-content: center; } }
+@media screen and (min-width: 60rem) { --lg .u-align-middle--lg { align-items: center; }
+  --lg .u-justify-start--lg { justify-content: flex-start; }
+  --lg .u-justify-end--lg { justify-content: flex-end; }
+  --lg .u-justify-middle--lg { justify-content: center; } }
 .u-flex { display: block; flex: 1 1 auto; }
 
 .u-flex-expand { display: block; flex: 1; }

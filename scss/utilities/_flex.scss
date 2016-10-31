@@ -18,19 +18,19 @@
 // ---
 
 @include generate-breakpoint-suffixes {
-    &u-align-middle {
+    .u-align-middle#{&} {
         align-items: center;
     }
 
-    &u-justify-start {
+    .u-justify-start#{&} {
         justify-content: flex-start;
     }
 
-    &u-justify-end {
+    .u-justify-end#{&} {
         justify-content: flex-end;
     }
 
-    &u-justify-middle {
+    .u-justify-middle#{&} {
         justify-content: center;
     }
 }
