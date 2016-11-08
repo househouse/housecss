@@ -22,8 +22,9 @@ $configure--primary-color: #3c485d;    // your foreground colour (i.e. text)
 $configure--secondary-color: #efe8d8;  // your background colour (i.e. bg)
 $configure--accent-color: blue;
 
-
-
+// If `true`, stylesheet will generate device-width classes. Set to `false` to
+// only use base classes and rules.
+$generate-responsive-classes: true !default;
 
 // Project-Wide Options
 // ============================================================================

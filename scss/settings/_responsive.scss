@@ -37,15 +37,17 @@
 }
 
 @mixin generate-breakpoint-suffixes {
-    @each $breakpoint-name, $breakpoint-value in $breakpoints {
-        @include generate-media-query($breakpoint-name) {
-            @if $breakpoint-name == xs {
-                .u {
-                    @content; // 2
-                }
-            } @else {
-                .break-#{$breakpoint-name}--u {
-                    @content; // 2
+    @if ($generate-responsive-classes == true) {
+        @each $breakpoint-name, $breakpoint-value in $breakpoints {
+            @include generate-media-query($breakpoint-name) {
+                @if $breakpoint-name == xs {
+                    .u {
+                        @content; // 2
+                    }
+                } @else {
+                    .break-#{$breakpoint-name}--u {
+                        @content; // 2
+                    }
                 }
             }
         }
