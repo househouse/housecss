@@ -1,8 +1,10 @@
 // Utilities: Text Color
 // ============================================================================
 
-@each $color-name, $color-value in $color-map {
-    .u-color-#{$color-name} {
-        color: $color-value;
+@include generate-breakpoint-suffixes {
+    @each $color-name, $color-value in $color-map {
+        &-color-#{$color-name} {
+            color: $color-value;
+        }
     }
 }

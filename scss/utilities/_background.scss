@@ -1,8 +1,10 @@
 // Utilities: Background
 // ============================================================================
 
-@each $color-name, $color-value in $color-map {
-    .u-bg-#{$color-name} {
-        background-color: $color-value;
+@include generate-breakpoint-suffixes {
+    @each $color-name, $color-value in $color-map {
+        &-bg-#{$color-name} {
+            background-color: $color-value;
+        }
     }
 }

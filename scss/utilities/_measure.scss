@@ -1,8 +1,10 @@
 // Utilities: Measure
 // ============================================================================
 
-@each $content-area-name, $content-area-width in $content-area-map {
-    .u-measure-#{$content-area-name} {
-        max-width: calc(#{$content-area-width} - (#{map-get($size-map, md)} * 10));
+@include generate-breakpoint-suffixes {
+    @each $content-area-name, $content-area-width in $content-area-map {
+        &-measure-#{$content-area-name} {
+            max-width: calc(#{$content-area-width} - (#{map-get($size-map, md)} * 10));
+        }
     }
 }

@@ -15,7 +15,7 @@ $attribute-map: (
 
 @mixin spacing($direction, $size) {
     @each $attribute in $attribute-map {
-        .u-#{$attribute}-#{$direction}-#{$size} {
+        &-#{$attribute}-#{$direction}-#{$size} {
             #{$attribute}-#{$direction}: #{map-get($size-map, $size)};
         }
     }
@@ -33,4 +33,6 @@ $attribute-map: (
     }
 }
 
-@include generate-spacing-classes;
+@include generate-breakpoint-suffixes {
+    @include generate-spacing-classes;
+}

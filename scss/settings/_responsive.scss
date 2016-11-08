@@ -1,5 +1,13 @@
-// Media Queries
+// Responsive
 // ============================================================================
+
+
+// Media Queries
+// ---
+//
+// Use this @include to define a specific media query style override. In most
+// cases, for project maintainability, it would be better to use a generated
+// class. (See `generate-media-query`)
 
 @mixin media-query($device) {
     @media screen and (min-width: $device) {
@@ -8,26 +16,37 @@
 }
 
 
-// ============================================================================
+// Generate Responsive Classes
+// ---
+//
+// Note: These are for Utility classes only! If you would like to do a style
+//       swap at a specific device size, consider using the former mixin instead
+//
+// 1. Returns the apropriate media query for the given breakpoint name.
+// 2. Nest content inside breakpoint suffix classes in the apropriate media
+//    query block.
 
-
-// returns the apropriate media query for the given breakpoint name
 @mixin generate-media-query($breakpoint) {
     @if (map-get($breakpoints, $breakpoint)) == null {
-        @content;
+        @content; // 1
     } @else {
         @media screen and (min-width: #{map-get($breakpoints, $breakpoint)}) {
-            @content;
+            @content; // 1
         }
     }
 }
 
-// nest content inside breakpoint suffix classes in the apropriate media query block
 @mixin generate-breakpoint-suffixes {
     @each $breakpoint-name, $breakpoint-value in $breakpoints {
         @include generate-media-query($breakpoint-name) {
-            --#{$breakpoint-name} {
-                @content;
+            @if $breakpoint-name == xs {
+                .u {
+                    @content; // 2
+                }
+            } @else {
+                .break-#{$breakpoint-name}--u {
+                    @content; // 2
+                }
             }
         }
     }

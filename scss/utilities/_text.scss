@@ -44,18 +44,19 @@
 // Text Alignment
 // ---
 
-.u-align-left {
-    text-align: left;
-}
+@include generate-breakpoint-suffixes {
+    &-align-left {
+        text-align: left;
+    }
 
-.u-align-center {
-    text-align: center;
-}
+    &-align-center {
+        text-align: center;
+    }
 
-.u-align-right {
-    text-align: right;
+    .u-align-right {
+        text-align: right;
+    }
 }
-
 
 // Text Casing
 // ---
@@ -70,16 +71,4 @@
 
 .u-capitalize {
     text-transform: capitalize;
-}
-
-
-// Text Clipping
-// ---
-
-.u-text-clip {
-    overflow: hidden;
-
-    color: transparent;
-    white-space: nowrap;
-    text-indent: 100%;
 }

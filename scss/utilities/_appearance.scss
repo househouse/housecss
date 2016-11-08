@@ -1,22 +1,24 @@
 // Utilities: Appearance
-// ---
+// ============================================================================
 
-.u-rounded-corners {
-    border-radius: map-get($appearances-map, rounded-corners);
-}
+@include generate-breakpoint-suffixes {
+    &-rounded-corners {
+        border-radius: map-get($appearances-map, rounded-corners);
+    }
 
-.u-very-rounded-corners {
-    border-radius: map-get($appearances-map, very-rounded-corners);
-}
+    &-very-rounded-corners {
+        border-radius: map-get($appearances-map, very-rounded-corners);
+    }
 
-.u-circle {
-    border-radius: map-get($appearances-map, circle);
-}
+    &-circle {
+        border-radius: map-get($appearances-map, circle);
+    }
 
-.u-half-transparent {
-    opacity: map-get($appearances-map, half-transparent);
-}
+    &-half-transparent {
+        opacity: map-get($appearances-map, half-transparent);
+    }
 
-.u-fully-transparent {
-    opacity: map-get($appearances-map, fully-transparent);
+    &-fully-transparent {
+        opacity: map-get($appearances-map, fully-transparent);
+    }
 }
