@@ -1,24 +1,24 @@
 h1, .u-text-size-very-large { font-size: 1.60181rem; }
-@media screen and (min-width: 45rem) { h1, .u-text-size-very-large { font-size: 1.80203rem; } }
-@media screen and (min-width: 60rem) { h1, .u-text-size-very-large { font-size: 2.02729rem; } }
+@media screen and (min-width: 50rem) { h1, .u-text-size-very-large { font-size: 1.80203rem; } }
+@media screen and (min-width: 70rem) { h1, .u-text-size-very-large { font-size: 2.02729rem; } }
 
-h2, .u-text-size-large { font-size: 1.26563rem; }
-@media screen and (min-width: 45rem) { h2, .u-text-size-large { font-size: 1.42383rem; } }
-@media screen and (min-width: 60rem) { h2, .u-text-size-large { font-size: 1.60181rem; } }
+h2, .u-text-size-large { font-size: 1.42383rem; }
+@media screen and (min-width: 50rem) { h2, .u-text-size-large { font-size: 1.60181rem; } }
+@media screen and (min-width: 70rem) { h2, .u-text-size-large { font-size: 1.80203rem; } }
 
-h3 { font-size: 1.42383rem; }
-@media screen and (min-width: 45rem) { h3 { font-size: 1.60181rem; } }
-@media screen and (min-width: 60rem) { h3 { font-size: 1.80203rem; } }
+h3 { font-size: 1.26563rem; }
+@media screen and (min-width: 50rem) { h3 { font-size: 1.42383rem; } }
+@media screen and (min-width: 70rem) { h3 { font-size: 1.60181rem; } }
 
 h4, h5, h6 { font-size: 1.125rem; }
-@media screen and (min-width: 45rem) { h4, h5, h6 { font-size: 1.26563rem; } }
-@media screen and (min-width: 60rem) { h4, h5, h6 { font-size: 1.42383rem; } }
+@media screen and (min-width: 50rem) { h4, h5, h6 { font-size: 1.26563rem; } }
+@media screen and (min-width: 70rem) { h4, h5, h6 { font-size: 1.42383rem; } }
 
 body, .u-text-size-base { font-size: 1rem; }
-@media screen and (min-width: 45rem) { body, .u-text-size-base { font-size: calc(1rem + 3 * (100vw - 45rem) / 400); } }
+@media screen and (min-width: 50rem) { body, .u-text-size-base { font-size: calc(1rem + 3 * (100vw - 45rem) / 400); } }
 
 small, .u-text-size-small { font-size: 0.88889rem; }
-@media screen and (min-width: 45rem) { small, .u-text-size-small { font-size: calc(1rem + 2.5 * (100vw - 45rem) / 400); } }
+@media screen and (min-width: 50rem) { small, .u-text-size-small { font-size: calc(1rem + 2.5 * (100vw - 45rem) / 400); } }
 
 *, *::after, *::before { box-sizing: border-box; }
 
@@ -245,6 +245,8 @@ a:hover { background-color: blue; color: #e7e9eb; text-decoration: none; }
 
 .u-inline-block { display: inline-block; }
 
+.u-inline { display: inline; }
+
 .u-clip { overflow: hidden; }
 
 .u-width-0 { width: 0; }
@@ -290,7 +292,7 @@ a:hover { background-color: blue; color: #e7e9eb; text-decoration: none; }
 .u-bleed-bottom { margin-bottom: -1rem; }
 
 .u-flexbox { display: flex; }
-.u-flexbox:not(.u-flex-column) { flex-direction: row; }
+.u-flexbox:not([class*='flex-column']) { flex-direction: row; }
 
 .u-flex-column { flex-direction: column; }
 
@@ -322,17 +324,25 @@ a:hover { background-color: blue; color: #e7e9eb; text-decoration: none; }
 
 .u-top-halfway { top: 50%; }
 
+.u-top-fullway { top: 100%; }
+
 .u-left-0 { left: 0; }
 
 .u-left-halfway { left: 50%; }
+
+.u-left-fullway { left: 100%; }
 
 .u-bottom-0 { bottom: 0; }
 
 .u-bottom-halfway { bottom: 50%; }
 
+.u-bottom-fullway { bottom: 100%; }
+
 .u-right-0 { right: 0; }
 
 .u-right-halfway { right: 50%; }
+
+.u-right-fullway { right: 100%; }
 
 .u-z-under { z-index: -1; }
 
@@ -453,8 +463,6 @@ a:hover { background-color: blue; color: #e7e9eb; text-decoration: none; }
 .u-lowercase { text-transform: lowercase; }
 
 .u-capitalize { text-transform: capitalize; }
-
-.u-text-clip { overflow: hidden; color: transparent; white-space: nowrap; text-indent: 100%; }
 
 .c-button { min-width: 44px; min-height: 44px; background: blue; cursor: pointer; appearance: none; }
 

@@ -71,15 +71,3 @@
 .u-capitalize {
     text-transform: capitalize;
 }
-
-
-// Text Clipping
-// ---
-
-.u-text-clip {
-    overflow: hidden;
-    clip-path: inset(1px 1px 1px 1px);
-    color: transparent;
-    white-space: nowrap;
-    text-indent: 100%;
-}

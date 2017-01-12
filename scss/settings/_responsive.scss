@@ -1,12 +1,30 @@
-// Mixins
+// Responsive
 // ============================================================================
 
 
-// Media Queries
+// Minimum and maximum
 // ---
 
-@mixin media-query($device) {
-    @media screen and (min-width: $device) {
-        @content;
-    }
+@mixin --small-only {
+    @media screen and (max-width: $content-area-narrow) { @content; }
+}
+
+@mixin --medium-only {
+    @media screen and (min-width: $content-area-narrow) and (max-width: $content-area-medium) { @content; }
+}
+
+
+// Minimum, scale upwards
+// ---
+
+@mixin --small-up {
+    @media screen and (min-width: $content-area-narrow) { @content; }
+}
+
+@mixin --medium-up {
+    @media screen and (min-width: $content-area-medium) { @content; }
+}
+
+@mixin --large-up {
+    @media screen and (min-width: $content-area-wide) { @content; }
 }

@@ -14,7 +14,7 @@ body {
     background: map-get($color-map, secondary);
 
     color: map-get($color-map, primary);
-    font-family: map-get($typeface-map, primary), map-get($typeface-map, emoji);
+    font-family: map-get($typeface-map, primary), 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
     font-weight: map-get($type-weight-map, base);
     line-height: map-get($leading-map, base);
 

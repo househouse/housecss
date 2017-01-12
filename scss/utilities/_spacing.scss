@@ -7,9 +7,6 @@
 // within the size category into the spacing class generator. The result is a
 // utility prefixed class for each direction and size for both padding and
 // margin.
-//
-// i.e. .u-padding-bottom-xs { padding-bottom: $space--very-small; }
-// i.e. .u-margin-top-xl { margin-top: $space--very-large; }
 
 $attribute-map: (
     margin,

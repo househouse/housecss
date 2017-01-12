@@ -47,12 +47,20 @@
     top: map-get($dimensions-map, half);
 }
 
+.u-top-fullway {
+    top: map-get($dimensions-map, full);
+}
+
 .u-left-0 {
     left: map-get($dimensions-map, 0);
 }
 
 .u-left-halfway {
     left: map-get($dimensions-map, half);
+}
+
+.u-left-fullway {
+    left: map-get($dimensions-map, full);
 }
 
 .u-bottom-0 {
@@ -63,12 +71,20 @@
     bottom: map-get($dimensions-map, half);
 }
 
+.u-bottom-fullway {
+    bottom: map-get($dimensions-map, full);
+}
+
 .u-right-0 {
     right: map-get($dimensions-map, 0);
 }
 
 .u-right-halfway {
     right: map-get($dimensions-map, half);
+}
+
+.u-right-fullway {
+    right: map-get($dimensions-map, full);
 }
 
 
