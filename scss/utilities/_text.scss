@@ -44,19 +44,18 @@
 // Text Alignment
 // ---
 
-@include generate-breakpoint-suffixes {
-    &-align-left {
-        text-align: left;
-    }
-
-    &-align-center {
-        text-align: center;
-    }
-
-    .u-align-right {
-        text-align: right;
-    }
+.u-align-left {
+    text-align: left;
 }
+
+.u-align-center {
+    text-align: center;
+}
+
+.u-align-right {
+    text-align: right;
+}
+
 
 // Text Casing
 // ---

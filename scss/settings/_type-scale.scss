@@ -29,47 +29,47 @@ $type-scale--step-7: $type-scale--ratio * $type-scale--step-6;
 %type-headline {
     font-size: $type-scale--step-4;
 
-    @include media-query(map-get($content-area-map, medium)) {
+    @include --medium-up {
         font-size: $type-scale--step-5;
     }
 
-    @include media-query(map-get($content-area-map, wide)) {
+    @include --large-up {
         font-size: $type-scale--step-6;
     }
 }
 
 %type-subheadline {
-    font-size: $type-scale--step-2;
+    font-size: $type-scale--step-3;
 
-    @include media-query(map-get($content-area-map, medium)) {
-        font-size: $type-scale--step-3;
+    @include --medium-up {
+        font-size: $type-scale--step-4;
     }
 
-    @include media-query(map-get($content-area-map, wide)) {
-        font-size: $type-scale--step-4;
+    @include --large-up {
+        font-size: $type-scale--step-5;
     }
 }
 
 %type-title {
-    font-size: $type-scale--step-3;
+    font-size: $type-scale--step-2;
 
-    @include media-query(map-get($content-area-map, medium)) {
-        font-size: $type-scale--step-4;
+    @include --medium-up {
+        font-size: $type-scale--step-3;
     }
 
-    @include media-query(map-get($content-area-map, wide)) {
-        font-size: $type-scale--step-5;
+    @include --large-up {
+        font-size: $type-scale--step-4;
     }
 }
 
 %type-subtitle {
     font-size: $type-scale--step-1;
 
-    @include media-query(map-get($content-area-map, medium)) {
+    @include --medium-up {
         font-size: $type-scale--step-2;
     }
 
-    @include media-query(map-get($content-area-map, wide)) {
+    @include --large-up {
         font-size: $type-scale--step-3;
     }
 }
@@ -77,15 +77,15 @@ $type-scale--step-7: $type-scale--ratio * $type-scale--step-6;
 %type-copy {
     font-size: $type-scale--base;
 
-    @include media-query(map-get($content-area-map, medium)) {
-        font-size: calc(#{$type-scale--base} + 3 * (100vw - #{map-get($content-area-map, medium)}) / 400)
+    @include --medium-up {
+        font-size: calc(#{$type-scale--base} + 3 * (100vw - #{map-get($content-area-map, medium)}) / 400);
     }
 }
 
 %type-small {
     font-size: $type-scale--base / $type-scale--ratio;
 
-    @include media-query(map-get($content-area-map, medium)) {
-        font-size: calc(#{$type-scale--base} + 2.5 * (100vw - #{map-get($content-area-map, medium)}) / 400)
+    @include --medium-up {
+        font-size: calc(#{$type-scale--base} + 2.5 * (100vw - #{map-get($content-area-map, medium)}) / 400);
     }
 }

@@ -2,54 +2,29 @@
 // ============================================================================
 
 
-// Media Queries
+// Minimum and maximum
 // ---
-//
-// Use this @include to define a specific media query style override. In most
-// cases, for project maintainability, it would be better to use a generated
-// class. (See `generate-media-query`)
 
-@mixin media-query($device) {
-    @media screen and (min-width: $device) {
-        @content;
-    }
+@mixin --small-only {
+    @media screen and (max-width: $content-area-narrow) { @content; }
+}
+
+@mixin --medium-only {
+    @media screen and (min-width: $content-area-narrow) and (max-width: $content-area-medium) { @content; }
 }
 
 
-// Generate Responsive Classes
+// Minimum, scale upwards
 // ---
-//
-// Note: These are for Utility classes only! If you would like to do a style
-//       swap at a specific device size, consider using the former mixin instead
-//
-// 1. Returns the apropriate media query for the given breakpoint name.
-// 2. Nest content inside breakpoint suffix classes in the apropriate media
-//    query block.
 
-@mixin generate-media-query($breakpoint) {
-    @if (map-get($breakpoints, $breakpoint)) == null {
-        @content; // 1
-    } @else {
-        @media screen and (min-width: #{map-get($breakpoints, $breakpoint)}) {
-            @content; // 1
-        }
-    }
+@mixin --small-up {
+    @media screen and (min-width: $content-area-narrow) { @content; }
 }
 
-@mixin generate-breakpoint-suffixes {
-    @if ($generate-responsive-classes == true) {
-        @each $breakpoint-name, $breakpoint-value in $breakpoints {
-            @include generate-media-query($breakpoint-name) {
-                @if $breakpoint-name == xs {
-                    .u {
-                        @content; // 2
-                    }
-                } @else {
-                    .break-#{$breakpoint-name}--u {
-                        @content; // 2
-                    }
-                }
-            }
-        }
-    }
+@mixin --medium-up {
+    @media screen and (min-width: $content-area-medium) { @content; }
+}
+
+@mixin --large-up {
+    @media screen and (min-width: $content-area-wide) { @content; }
 }

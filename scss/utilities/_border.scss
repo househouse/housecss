@@ -1,22 +1,20 @@
 // Utilities: Borders
 // ============================================================================
 
-@include generate-breakpoint-suffixes {
-    &-border-0 {
-        border: 0;
-    }
+.u-border-0 {
+    border: 0;
+}
 
-    @each $color-name, $color-value in $color-map {
-        &-border-#{$color-name} {
-            border: 1px #{$color-value} solid;
-        }
+@each $color-name, $color-value in $color-map {
+    .u-border-#{$color-name} {
+        border: 1px #{$color-value} solid;
     }
+}
 
-    @each $color-name, $color-value in $color-map {
-        @each $direction in $directions-map {
-            &-border-#{$direction}-#{$color-name} {
-                border-#{$direction}: 1px #{$color-value} solid;
-            }
+@each $color-name, $color-value in $color-map {
+    @each $direction in $directions-map {
+        .u-border-#{$direction}-#{$color-name} {
+            border-#{$direction}: 1px #{$color-value} solid;
         }
     }
 }
