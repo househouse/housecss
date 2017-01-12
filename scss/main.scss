@@ -86,8 +86,17 @@
 // ⚠️ USE WITH EXTREME CAUTION: Sometimes, there are times that we need to write
 // template overrides, or classes that are linked directly to the page on which
 // they appear. These styles should be used as a last resort only!
+//
+// @import 'templates/home';
 
-@import 'templates/home';
+
+// Animations
+// ---
+//
+// Grouping CSS keyframes and animations together will help organize
+// interactions. Animations classes use a a- namespace, e.g. a-fade-in-top-slow.
+//
+// @import 'animations/fade-in';
 
 
 // Third-Party Plugins
