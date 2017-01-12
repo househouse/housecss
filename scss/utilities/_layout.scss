@@ -3,97 +3,67 @@
 
 .u-context {
     position: relative;
+
+    @include --small-only {
+        &--small-only {
+            position: relative;
+        }
+    }
+
+    @include --small-up {
+        &--small-up {
+            position: relative;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            position: relative;
+        }
+    }
 }
 
 .u-position {
     position: absolute;
+
+    @include --small-only {
+        &--small-only {
+            position: absolute;
+        }
+    }
+
+    @include --small-up {
+        &--small-up {
+            position: absolute;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            position: absolute;
+        }
+    }
 }
 
 .u-fixed {
     position: fixed;
-}
 
+    @include --small-only {
+        &--small-only {
+            position: fixed;
+        }
+    }
 
-// Center In Parent
-// ---
+    @include --small-up {
+        &--small-up {
+            position: fixed;
+        }
+    }
 
-.u-center {
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-}
-
-
-// Cover Parent
-// ---
-
-.u-cover {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-
-// X & Y Index Positioning
-// ---
-
-.u-top-0 {
-    top: map-get($dimensions-map, 0);
-}
-
-.u-top-halfway {
-    top: map-get($dimensions-map, half);
-}
-
-.u-top-fullway {
-    top: map-get($dimensions-map, full);
-}
-
-.u-left-0 {
-    left: map-get($dimensions-map, 0);
-}
-
-.u-left-halfway {
-    left: map-get($dimensions-map, half);
-}
-
-.u-left-fullway {
-    left: map-get($dimensions-map, full);
-}
-
-.u-bottom-0 {
-    bottom: map-get($dimensions-map, 0);
-}
-
-.u-bottom-halfway {
-    bottom: map-get($dimensions-map, half);
-}
-
-.u-bottom-fullway {
-    bottom: map-get($dimensions-map, full);
-}
-
-.u-right-0 {
-    right: map-get($dimensions-map, 0);
-}
-
-.u-right-halfway {
-    right: map-get($dimensions-map, half);
-}
-
-.u-right-fullway {
-    right: map-get($dimensions-map, full);
-}
-
-
-// Z Index Positioning
-// ---
-
-@each $layer-name, $layer-value in $z-map {
-    .u-z-#{$layer-name} {
-        z-index: $layer-value;
+    @include --medium-up {
+        &--medium-up {
+            position: fixed;
+        }
     }
 }
 
@@ -111,4 +81,160 @@
 
 .u-float-none {
     float: none;
+}
+
+
+// X- & Y-Index Positioning
+// ---
+
+@each $direction-name in $directions-map {
+    .u-#{$direction-name}-0 {
+        #{$direction-name}: $no-size;
+
+        @include --small-only {
+            &--small-only {
+                #{$direction-name}: $no-size;
+            }
+        }
+
+        @include --small-up {
+            &--small-up {
+                #{$direction-name}: $no-size;
+            }
+        }
+
+        @include --medium-up {
+            &--medium-up {
+                #{$direction-name}: $no-size;
+            }
+        }
+    }
+}
+
+@each $direction-name in $directions-map {
+    .u-#{$direction-name}-halfway {
+        #{$direction-name}: $one-half;
+
+        @include --small-only {
+            &--small-only {
+                #{$direction-name}: $one-half;
+            }
+        }
+
+        @include --small-up {
+            &--small-up {
+                #{$direction-name}: $one-half;
+            }
+        }
+
+        @include --medium-up {
+            &--medium-up {
+                #{$direction-name}: $one-half;
+            }
+        }
+    }
+}
+
+@each $direction-name in $directions-map {
+    .u-#{$direction-name}-fullway {
+        #{$direction-name}: $full-size;
+
+        @include --small-only {
+            &--small-only {
+                #{$direction-name}: $full-size;
+            }
+        }
+
+        @include --small-up {
+            &--small-up {
+                #{$direction-name}: $full-size;
+            }
+        }
+
+        @include --medium-up {
+            &--medium-up {
+                #{$direction-name}: $full-size;
+            }
+        }
+    }
+}
+
+
+// Realign (Translate)
+// ---
+
+.u-realign-center {
+    transform: translate(-50%, -50%);
+
+    @include --small-only {
+        &--small-only {
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    @include --small-up {
+        &--small-up {
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            transform: translate(-$one-half, -$one-half);
+        }
+    }
+}
+
+.u-realign-center-vert {
+    transform: translateY(-$one-half);
+
+    @include --small-only {
+        &--small-only {
+            transform: translateY(-$one-half);
+        }
+    }
+
+    @include --small-up {
+        &--small-up {
+            transform: translateY(-$one-half);
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            transform: translateY(-$one-half);
+        }
+    }
+}
+
+.u-realign-center-horz {
+    transform: translateX(-$one-half);
+
+    @include --small-only {
+        &--small-only {
+            transform: translateX(-$one-half);
+        }
+    }
+
+    @include --small-up {
+        &--small-up {
+            transform: translateX(-$one-half);
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            transform: translateX(-$one-half);
+        }
+    }
+}
+
+
+// Z-Index Positioning
+// ---
+
+@each $layer-name, $layer-value in $z-map {
+    .u-stack-#{$layer-name} {
+        z-index: $layer-value;
+    }
 }

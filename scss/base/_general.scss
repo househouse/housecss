@@ -11,12 +11,12 @@ body {
     overflow: hidden;
     overflow-y: scroll;
 
-    background: map-get($color-map, secondary);
+    background: $secondary-color;
 
-    color: map-get($color-map, primary);
-    font-family: map-get($typeface-map, primary), 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-    font-weight: map-get($type-weight-map, base);
-    line-height: map-get($leading-map, base);
+    color: $primary-color;
+    font-family: $primary-font, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-weight: $regular-font;
+    line-height: $base-leading;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -136,8 +136,4 @@ svg {
 table {
     border-spacing: 0;
     border-collapse: collapse;
-}
-
-[hidden] {
-    display: none !important;
 }

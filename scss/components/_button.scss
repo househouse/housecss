@@ -11,8 +11,10 @@
     min-width: 44px; // 1
     min-height: 44px; // 1
 
-    border-radius: map-get($appearances-map, border-radius);
-    background: map-get($color-map, link);
+    border-radius: $rounded-corners;
+    background: $accent-color;
+
+    color: $white;
 
     cursor: pointer;
 

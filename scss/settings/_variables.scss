@@ -26,104 +26,161 @@ $configure--accent-color: blue;
 // Project-Wide Options
 // ============================================================================
 
-// Size options
+
+// Spacing Options
+// ---
+
+$very-small-space: $configure--base-unit/4;
+$small-space: $configure--base-unit/2;
+$base-space: $configure--base-unit;
+$large-space: $configure--base-unit*2;
+$very-large-space: $configure--base-unit*4;
+
 $size-map: (
-    xs: $configure--base-unit/4,
-    sm: $configure--base-unit/2,
-    md: $configure--base-unit,
-    lg: $configure--base-unit*2,
-    xl: $configure--base-unit*4,
+    xs: $very-small-space,
+    sm: $small-space,
+    md: $base-space,
+    lg: $large-space,
+    xl: $very-large-space,
 );
 
-// Typeface options
+
+// Typeface Options
+// ---
+
+$primary-font: $configure--primary-font;
+$secondary-font: $configure--secondary-font;
+$code-font: $configure--code-font;
+
 $typeface-map: (
-    primary: $configure--primary-font,
-    secondary: $configure--secondary-font,
-    code: $configure--code-font,
+    primary: $primary-font,
+    secondary: $secondary-font,
+    code: $code-font,
 );
 
-// Weight options
+
+// Type Weight Options
+// ---
+
+$bold-font: $configure--text-bold;
+$regular-font: $configure--text-weight;
+
 $type-weight-map: (
-    base: $configure--text-weight,
-    bold: $configure--text-bold,
+    base: $regular-font,
+    bold: $bold-font,
 );
 
-// Leading options
+
+// Type Leading Options
+// ---
+
+$base-leading: $configure--base-ratio*1.4;
+$tight-leading: $configure--base-ratio;
+
 $leading-map: (
-    base: ($configure--base-ratio * 1.4),
-    tight: $configure--base-ratio,
+    base: $base-leading,
+    tight: $tight-leading,
 );
 
-// Colour options
+
+// Colour Options
+// ---
+
+$primary-color:   $configure--primary-color;
+$secondary-color: $configure--secondary-color;
+$accent-color: $configure--accent-color;
+$black: mix(#000, mix(#000, mix(#000, $configure--primary-color)));
+$white: mix(#fff, mix(#fff, mix(#fff, $configure--primary-color)));
+
 $color-map: (
-    primary:   $configure--primary-color,
-    secondary: $configure--secondary-color,
-    link:      $configure--accent-color,
-    black:     mix(#000, mix(#000, mix(#000, $configure--primary-color))),
-    white:     mix(#fff, mix(#fff, mix(#fff, $configure--primary-color))),
-    tu: #36465d,
-    fb: #3b5998,
-    li: #0077b5,
-    in: #517fa4,
-    tw: #55acee,
-    go: #dd4b39,
-    yt: #cd201f,
-    pi: #bd081c,
+    primary:   $primary-color,
+    secondary: $secondary-color,
+    link:      $accent-color,
+    black:     $black,
+    white:     $white,
 );
 
-// Z-axis options
+
+// Z-axis Options
+// ---
+
+$z1-depth: -1;
+$z2-depth: 1;
+$z3-depth: 10;
+$z4-depth: 100;
+$z5-depth: 1000;
+
 $z-map: (
-    under: -1,
-    basic: 1,
-    stack: 10,
-    shade: 100,
-    modal: 1000,
+    under: $z1-depth,
+    basic: $z2-depth,
+    stack: $z3-depth,
+    shade: $z4-depth,
+    modal: $z5-depth,
 );
 
-// Content area options
+
+// Content Area Options
+// ---
+
+$content-area-narrow: $configure--base-unit*30;
+$content-area-medium: $configure--base-unit*50;
+$content-area-wide: $configure--base-unit*70;
+
 $content-area-map: (
-    narrow: $configure--base-unit*30,
-    medium: $configure--base-unit*45,
-    wide:   $configure--base-unit*60,
+    narrow: $content-area-narrow,
+    medium: $content-area-medium,
+    wide:   $content-area-wide,
 );
 
-// Viewport breakpoints options
-$breakpoints: (
-    xs: null,
-    sm: $configure--base-unit*30,
-    md: $configure--base-unit*45,
-    lg: $configure--base-unit*60,
-);
 
-// Dimensions options
+// Dimension Options
+// ---
+
+$no-size: 0;
+$one-quarter: round(100%/4);
+$one-third: round(100%/3);
+$one-half: round(100%/2);
+$two-thirds: round(100%/1.5151);
+$three-quarters: round(100%/1.3333);
+$full-size: round(100%/1);
+
 $dimensions-map: (
-    0: 0,
-    1of4: round(100%/4),
-    1of3: round(100%/3),
-    half: round(100%/2),
-    2of3: round(100%/1.5151),
-    3of4: round(100%/1.3333),
-    full: round(100%/1),
+    0: $no-size,
+    1of4: $one-quarter,
+    1of3: $one-third,
+    1of2: $one-half,
+    2of3: $two-thirds,
+    3of4: $three-quarters,
+    full: $full-size,
 );
+
 
 // Style options
+// ---
+
+$circle: 100%;
+$rounded-corners: $configure--base-unit / ($configure--base-ratio*3);
+$very-rounded-corners: $configure--base-unit * $configure--base-ratio;
+$not-transparent: 1;
+$half-transparent: 0.5;
+$fully-transparent: 0;
+
 $appearances-map: (
-    rounded-corners: $configure--base-unit / ($configure--base-ratio * 3),
-    very-rounded-corners: $configure--base-unit * $configure--base-ratio,
-    circle: 100%,
-    half-transparent: 0.5,
-    fully-transparent: 0,
+    circle: $circle,
+    rounded-corners: $rounded-corners,
+    very-rounded-corners: $very-rounded-corners,
+    not-transparent: $not-transparent,
+    half-transparent: $half-transparent,
+    fully-transparent: $fully-transparent,
 );
 
+
 // Direction options
+// ---
+
 $directions-map: (
     top,
     left,
     right,
     bottom,
 );
-
-// Content Widths
-$content-area-narrow: 30rem;
-$content-area-medium: 50rem;
-$content-area-wide: 70rem;
