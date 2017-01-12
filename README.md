@@ -21,9 +21,11 @@ according our code guidelines and conventions:
    in a logical hierarchy. That also means classes should be self-documenting
    and independent of elements. The exception is components, which are
    directly coupled to markup or other styles.
-3. Follow the Code of Conduct at all times.
+4. Follow the [Code of Conduct](https://github.com/househouse/housecss/blob/master/code-of-conduct.md)at all times.
 
-Note: When contributing back upstream, compile your SCSS to css with:
-`sass --watch scss:css --style compact`
+Note: When contributing back upstream, compile your SCSS to CSS with:
+`sass --watch scss:css --style compact`. Additionally, be sure to check it
+with [CSS Stats](http://cssstats.com/stats?link=https%3A%2F%2Fraw.githubusercontent.com%2Fhousehouse%2Fhousecss%2Fmaster%2Fcss%2Fmain.css)
+to make sure the stylesheet is still maintainable.
 
 More to come ✌🏼
