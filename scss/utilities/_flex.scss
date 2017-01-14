@@ -7,10 +7,46 @@
     &:not([class*='flex-column']) {
         flex-direction: row;
     }
+
+    @include --small-only {
+        &--small-only {
+            display: flex;
+        }
+    }
+
+    @include --small-up {
+        &--small-up {
+            display: flex;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            display: flex;
+        }
+    }
 }
 
 .u-flex-column {
     flex-direction: column;
+
+    @include --small-only {
+        &--small-only {
+            flex-direction: column;
+        }
+    }
+
+    @include --small-up {
+        &--small-up {
+            flex-direction: column;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            flex-direction: column;
+        }
+    }
 }
 
 
@@ -19,18 +55,90 @@
 
 .u-align-middle {
     align-items: center;
+
+    @include --small-only {
+        &--small-only {
+            align-items: center;
+        }
+    }
+
+    @include --small-up {
+        &--small-up {
+            align-items: center;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            align-items: center;
+        }
+    }
 }
 
 .u-justify-start {
     justify-content: flex-start;
+
+    @include --small-only {
+        &--small-only {
+            justify-content: flex-start;
+        }
+    }
+
+    @include --small-up {
+        &--small-up {
+            justify-content: flex-start;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            justify-content: flex-start;
+        }
+    }
 }
 
 .u-justify-end {
     justify-content: flex-end;
+
+    @include --small-only {
+        &--small-only {
+            justify-content: flex-end;
+        }
+    }
+
+    @include --small-up {
+        &--small-up {
+            justify-content: flex-end;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            justify-content: flex-end;
+        }
+    }
 }
 
 .u-justify-middle {
     justify-content: center;
+
+    @include --small-only {
+        &--small-only {
+            justify-content: center;
+        }
+    }
+
+    @include --small-up {
+        &--small-up {
+            justify-content: center;
+        }
+    }
+
+    @include --medium-up {
+        &--medium-up {
+            justify-content: center;
+        }
+    }
 }
 
 

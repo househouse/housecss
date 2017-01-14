@@ -78,7 +78,7 @@ $type-scale--step-7: $type-scale--ratio * $type-scale--step-6;
     font-size: $type-scale--base;
 
     @include --medium-up {
-        font-size: calc(#{$type-scale--base} + 3 * (100vw - #{map-get($content-area-map, medium)}) / 400);
+        font-size: calc(#{$type-scale--base} + 3 * (100vw - #{$content-area-medium}) / 400);
     }
 }
 
@@ -86,6 +86,6 @@ $type-scale--step-7: $type-scale--ratio * $type-scale--step-6;
     font-size: $type-scale--base / $type-scale--ratio;
 
     @include --medium-up {
-        font-size: calc(#{$type-scale--base} + 2.5 * (100vw - #{map-get($content-area-map, medium)}) / 400);
+        font-size: calc(#{$type-scale--base} + 2.5 * (100vw - #{$content-area-medium}) / 400);
     }
 }

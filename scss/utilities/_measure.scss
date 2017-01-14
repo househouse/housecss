@@ -3,6 +3,24 @@
 
 @each $content-area-name, $content-area-width in $content-area-map {
     .u-measure-#{$content-area-name} {
-        max-width: calc(#{$content-area-width} - (#{map-get($size-map, md)} * 10));
+        max-width: calc(#{$content-area-width} - (#{$base-space} * 10));
+
+        @include --small-only {
+            &--small-only {
+                max-width: calc(#{$content-area-width} - (#{$base-space} * 10));
+            }
+        }
+
+        @include --small-up {
+            &--small-up {
+                max-width: calc(#{$content-area-width} - (#{$base-space} * 10));
+            }
+        }
+
+        @include --medium-up {
+            &--medium-up {
+                max-width: calc(#{$content-area-width} - (#{$base-space} * 10));
+            }
+        }
     }
 }
