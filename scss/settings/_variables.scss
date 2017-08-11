@@ -1,92 +1,37 @@
 // Project-Wide Configurable Variables
 // ============================================================================
 
-
 :root {
-  --black: #1a1d20;
 
-  --gray0: #f8f9f9;
-  --gray1: #ebedee;
-  --gray2: #dee1e3;
-  --gray3: #cfd3d6;
-  --gray4: #bec4c8;
-  --gray5: #acb4b9;
-  --gray6: #97a1a7;
-  --gray7: #7f8a93;
-  --gray8: #5f6e78;
-  --gray9: #374047;
+  // Set your base units and type ratio
+  --unit: 1rem;
+  --ratio: 1.125;
 
-  --blue--lighter: #e4f1f9;
-  --blue--light: #a4d0ed;
-  --blue: #49a1dc;
-  --blue--dark: #006fb9;
-  --blue--darker: #00395f;
+  // Set the colours of your entire project
+  --color--primary: var(--black); // Foreground colour (i.e. text)
+  --color--secondary: var(--gray0); // Background colour (i.e. bg)
+  --color--accent: var(--blue);
 
-  --indigo--lighter: #e9ebfa;
-  --indigo--light: #b6bcf1;
-  --indigo: #6773e1;
-  --indigo--dark: #0012b9;
-  --indigo--darker: #00095d;
+  // Set your base typographic styles
+  --font--primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  --font--secondary: 'Georgia', serif;
+  --font--code: 'Menlo', monospace;
 
-  --violet--lighter: #f0e9fa;
-  --violet--light: #cdb6f1;
-  --violet: #9767e1;
-  --violet--dark: #4a00b9;
-  --violet--darker: #26005f;
+  // Set your desired type weights
+  --font--weight: 300;
+  --font--weight-bold: 700;
 
-  --fuschia--lighter: #f9e9fa;
-  --fuschia--light: #eab5f0;
-  --fuschia: #d465e1;
-  --fuschia--dark: #a700ba;
-  --fuschia--darker: #570061;
+  // Set your font-leading
+  --font--leading: var(--ratio);
+  --font--leading-tight: calc(1.42222 * var(--ratio));
 
-  --pink--lighter: #fae9f4;
-  --pink--light: #f1b6d9;
-  --pink: #e166b0;
-  --pink--dark: #ba0070;
-  --pink--darker: #62003b;
+  // Space variables
+  --space-xs: calc(0.25 * var(--unit));
+  --space-sm: calc(0.5 * var(--unit));
+  --space-md: calc(1 * var(--unit));
+  --space-lg: calc(2 * var(--unit));
+  --space-xl: calc(4 * var(--unit));
 
-  --red--lighter: #fbeaeb;
-  --red--light: #f1b7bd;
-  --red: #e26975;
-  --red--dark: #ba0013;
-  --red--darker: #62000a;
-
-  --orange--lighter: #f9ede4;
-  --orange--light: #edc2a5;
-  --orange: #dc854b;
-  --orange--dark: #b94a00;
-  --orange--darker: #5f2500;
-
-  --yellow--lighter: #f8f6de;
-  --yellow--light: #eae194;
-  --yellow: #d8c838;
-  --yellow--dark: #baa700;
-  --yellow--darker: #615700;
-
-  --lime--lighter: #eef8df;
-  --lime--light: #c9eb97;
-  --lime: #9ad93b;
-  --lime--dark: #70ba00;
-  --lime--darker: #3b6200;
-
-  --green--lighter: #e6f9e4;
-  --green--light: #abeda3;
-  --green: #56db47;
-  --green--dark: #13ba00;
-  --green--darker: #0a6200;
-
-  --teal--lighter: #e3f9ec;
-  --teal--light: #a3edc0;
-  --teal: #47db82;
-  --teal--dark: #00ba4a;
-  --teal--darker: #006227;
-
-  --cyan--lighter: #e3f9f7;
-  --cyan--light: #a1ece5;
-  --cyan: #44dbcb;
-  --cyan--dark: #00baa7;
-  --cyan9--darker: #006258;
 }
 
 // Project-Wide Options

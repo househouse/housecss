@@ -1,0 +1,40 @@
+{
+  "name": "housecss",
+  "version": "2.0.0",
+  "description": "Rapid-iteration Functional CSS library",
+  "styles": "src/main.scss",
+  "scripts": {
+    "build": "postcss -c postcss.config.js",
+    "minify": "postcss -u cssnano css/housecss.css -o css/housecss.min.css",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/househouse/housecss.git"
+  },
+  "keywords": [
+    "functional css",
+    "css",
+    "framework",
+    "oocss"
+  ],
+  "author": "House House Design (house-house.design)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/househouse/housecss/issues"
+  },
+  "homepage": "https://github.com/househouse/housecss#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.4",
+    "cssnano": "^3.10.0",
+    "postcss": "^6.0.8",
+    "postcss-cli": "^4.1.0",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-import": "^10.0.0",
+    "postcss-loader": "^2.0.6",
+    "postcss-remove-root": "0.0.2",
+    "postcss-reporter": "^5.0.0",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.5.3"
+  }
+}

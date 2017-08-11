@@ -1,0 +1,11 @@
+/* Custom media queries */
+
+@custom-media --small-only (max-width: var(--area-narrow));
+
+@custom-media --medium-only (min-width: var(--area-narrow)) and (max-width: var(--area-medium));
+
+@custom-media --small-up (min-width: var(--area-narrow));
+
+@custom-media --medium-up (min-width: var(--area-medium));
+
+@custom-media --large-up (min-width: var(--area-wide));

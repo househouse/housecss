@@ -1,8 +1,18 @@
 // Utilities: Text Color
 // ============================================================================
 
-@each $color-name, $color-value in $color-map {
-    .u-color-#{$color-name} {
-        color: $color-value;
-    }
-}
+.u-black { var(--black); }
+
+.u-gray2 { var(--gray2); }
+.u-gray5 { var(--gray5); }
+.u-gray8 { var(--gray8); }
+
+.u-red { var(--red); }
+.u-orange { var(--orange); }
+.u-yellow { var(--yellow); }
+.u-green { var(--green); }
+.u-teal { var(--teal); }
+.u-cyan { var(--cyan); }
+.u-blue { var(--blue); }
+.u-violet { var(--violet); }
+.u-fuschia { var(--fuschia); }

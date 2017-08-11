@@ -1,0 +1,65 @@
+/* Global typography styles */
+
+
+h1 {
+  @apply --type--headline1;
+}
+
+h2 {
+  @apply --type--headline2;
+}
+
+h3 {
+  @apply --type--headline3;
+}
+
+h4 {
+  @apply --type--headline4;
+}
+
+h5 {
+  @apply --type--headline5;
+}
+
+h6 {
+  @apply --type--headline6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font--secondary);
+  font-weight: var(--font--weight);
+  line-height: var(--font--leading-tight);
+}
+
+ul {
+  list-style-type: none;
+}
+
+small {
+  @apply --type--small;
+}
+
+code,
+pre {
+  font-family: var(--font--code);
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+q,
+blockquote {
+  quote: none;
+
+  &::before,
+  &::after {
+    content: '';
+  }
+}
