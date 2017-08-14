@@ -1,0 +1,41 @@
+/* Utilities: Spacing */
+/* ========== */
+@import './_responsive';
+
+/* Display (except flex) */
+.u-block { display: block; }
+.u-inline-block { display: inline-block; }
+
+/* Hide things */
+.u-hidden {
+  display: none !important;
+
+  @media(--small-only) {
+    &--small-only {
+      display: none !important;
+    }
+  }
+  @media(--small-up) {
+    &--small-up {
+      display: none !important;
+    }
+  }
+  @media(--medium-up) {
+    &--medium-up {
+      display: none !important;
+    }
+  }
+}
+
+.u-hide {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+
+.u-overflow--clip { overflow: hidden; }
+.u-overflow--scroll { overflow: scroll; }
+.u-overflow--auto { overflow: auto; }
