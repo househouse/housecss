@@ -1,1 +1,20 @@
-/**/
+/* Utitlties: Appearance */
+/* ========== */
+
+.u-rounded {
+  border-radius: var(--space-xs);
+}
+
+.u-very-rounded {
+  border-radius: calc(var(--space-xs) * 1.5);
+}
+
+.u-circle {
+  border-radius: 50%;
+}
+
+.u-not-transparent { opacity: 0; }
+
+.u-half-transparent { opacity: 0.5; }
+
+.u-fully-transparent { opacity: 1; }
