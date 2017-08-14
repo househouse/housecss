@@ -1,4 +1,5 @@
 /* Project-Wide Configurable Variables */
+/* ========== */
 /* Note: The :root is removed on compile to make sure it doesn't overlap with any custom options */
 
 :root {

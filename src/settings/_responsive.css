@@ -1,4 +1,5 @@
 /* Custom media queries */
+/* ========== */
 
 @custom-media --small-only (max-width: var(--area-narrow));
 

@@ -1,5 +1,5 @@
 /* Global typography styles */
-
+/* ========== */
 
 h1 {
   @apply --type--headline1;
