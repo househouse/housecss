@@ -1,6 +1,6 @@
 /* Utilities: Spacing */
 /* ========== */
-@import './_responsive';
+@import '../settings/_responsive';
 
 /* Display (except flex) */
 .u-block { display: block; }
