@@ -31,13 +31,9 @@
   --type--headline1 {
     font-size: var(--type--scale5);
 
-    @media (--small-up) {
-      font-size: var(--type--scale6);
-    }
+    @media (--small-up) { font-size: var(--type--scale6); }
 
-    @media (--medium-up) {
-      font-size: var(--type--scale7);
-    }
+    @media (--medium-up) { font-size: var(--type--scale7); }
   }
 
   --type--headline2 {
