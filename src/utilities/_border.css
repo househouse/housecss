@@ -1,0 +1,35 @@
+/* Utilities: Borders */
+/* ========== */
+
+.u-border-0 { border: 0; }
+.u-border-top-0 { border-top: 0; }
+.u-border-right-0 { border-right: 0; }
+.u-border-bottom-0 { border-bottom: 0; }
+.u-border-left-0 { border-left: 0; }
+
+.u-border { border: 1px solid var(--black); }
+.u-border-top { border-top: 1px solid var(--black); }
+.u-border-right { border-right: 1px solid var(--black); }
+.u-border-bottom { border-bottom: 1px solid var(--black); }
+.u-border-left { border-left: 1px solid var(--black); }
+
+/* Border Colors */
+.u-border--black { color: var(--black); }
+.u-border--white { color: var(--white); }
+
+.u-border--gray2 { color: var(--gray2); }
+.u-border--gray5 { color: var(--gray5); }
+.u-border--gray8 { color: var(--gray8); }
+
+
+.u-border--red { color: var(--red); }
+.u-border--orange { color: var(--orange); }
+.u-border--yellow { color: var(--yellow); }
+.u-border--green { color: var(--green); }
+.u-border--teal { color: var(--teal); }
+.u-border--cyan { color: var(--cyan); }
+.u-border--blue { color: var(--blue); }
+.u-border--violet { color: var(--violet); }
+.u-border--fuschia { color: var(--fuschia); }
+
+.u-
