@@ -2,7 +2,12 @@
   "name": "housecss",
   "version": "2.0.0",
   "description": "A Functional CSS library for rapid-iteration",
-  "styles": "src/housecss.css",
+  "styles": "src/housecss.min.css",
+  "main": "src/housecss.css",
+  "files" : [
+    "css",
+    "src"
+  ],
   "scripts": {
     "build": "postcss src/housecss.css -od css/",
     "minify": "cleancss -o css/housecss.min.css css/housecss.css",
@@ -19,6 +24,18 @@
     "oocss"
   ],
   "author": "House House Design (house-house.design)",
+  "contributors": [
+    {
+      "name": "Sean Durfee",
+      "email": "sean@house-house.design",
+      "url": "http://durfee.me"
+    },
+    {
+      "name": "Ben Groulx",
+      "email": "ben@house-house.design",
+      "url": "http://bengroulx.com"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/househouse/housecss/issues"
