@@ -1,6 +1,7 @@
 /* Utilities: Layout */
 /* ========== */
 
+
 /* Font Weights */
 /* All font weights available as system fonts will support all of them */
 .u-font-weight--9 { font-weight: 900; }
@@ -23,14 +24,85 @@
 /* Font Sizes */
 
 /* These scale with screen size */
-.u-font-size--h1 { @apply --type--headline1; }
-.u-font-size--h2 { @apply --type--headline2; }
-.u-font-size--h3 { @apply --type--headline3; }
-.u-font-size--h4 { @apply --type--headline4; }
-.u-font-size--h5 { @apply --type--headline5; }
-.u-font-size--h6 { @apply --type--headline6; }
-.u-font-size--body { @apply --type--body; }
-.u-font-size--small { @apply --type--small; }
+.u-font-size--h1 {
+  font-size: var(--type--scale5);
+
+  @media (--small-up) { font-size: var(--type--scale6); }
+
+  @media (--medium-up) { font-size: var(--type--scale7); }
+}
+
+.u-font-size--h2 {
+  font-size: var(--type--scale4);
+
+  @media (--small-up) {
+    font-size: var(--type--scale5);
+  }
+
+  @media (--medium-up) {
+    font-size: var(--type--scale6);
+  }
+}
+
+.u-font-size--h3 {
+  font-size: var(--type--scale3);
+
+  @media (--small-up) {
+    font-size: var(--type--scale4);
+  }
+
+  @media (--medium-up) {
+    font-size: var(--type--scale5);
+  }
+}
+
+.u-font-size--h4 {
+  font-size: var(--type--scale2);
+
+  @media (--small-up) {
+    font-size: var(--type--scale3);
+  }
+
+  @media (--medium-up) {
+    font-size: var(--type--scale4);
+  }
+}
+.u-font-size--h5 {
+  font-size: var(--type--scale1);
+
+  @media (--small-up) {
+    font-size: var(--type--scale2);
+  }
+
+  @media (--medium-up) {
+    font-size: var(--type--scale3);
+  }
+}
+.u-font-size--h6 {
+  font-size: var(--type--scale0);
+
+  @media (--small-up) {
+    font-size: var(--type--scale1);
+  }
+
+  @media (--medium-up) {
+    font-size: var(--type--scale2);
+  }
+}
+.u-font-size--body {
+  font-size: var(--type--scale0);
+
+  @media (--medium-up) {
+    font-size: calc(var(--type--scale0) + 3 * calc(100vw - var(--area--medium)) / 400);
+  }
+}
+.u-font-size--small {
+  font-size: var(--type--scalen1);
+
+  @media (--medium-up) {
+    font-size: calc(var(--type-scalen1, 0.875rem) + 3 * calc(100vw - var(--area--medium) / 400));
+  }
+}
 
 /* These don't with screen size */
 .u-font-size--scalen1 { font-size: var(--type--scalen1); }

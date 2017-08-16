@@ -56,4 +56,4 @@
 .u-fill-cyan { fill: var(--cyan); }
 .u-fill-blue { fill: var(--blue); }
 .u-fill-violet { fill: var(--violet); }
-.u-fill-fuschia { var(--fuschia); }
+.u-fill-fuschia { fill: var(--fuschia); }

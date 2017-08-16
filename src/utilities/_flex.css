@@ -1,25 +1,20 @@
 /* Utilities: Flex */
 /* ========== */
 
-@import '../settings/_responsive';
-
 .u-flexbox {
   display: flex;
 
   &:not([class*='flex-column']) {
     flex-direction: row;
   }
-
-  @media (--small-only) {
-    &--small-only { display: flex; }
-  }
-  @media (--small-up) {
-    &--small-up { display: flex; }
-  }
-  @media (--medium-up) {
-    &--medium-up { display: flex; }
-  }
 }
+@media (--small-up) {
+  .u-flexbox--small-up { display: flex; }
+}
+@media (--medium-up) {
+  .u-flexbox--medium-up { display: flex; }
+}
+
 
 .u-flex-column { flex-direction: column; }
 
