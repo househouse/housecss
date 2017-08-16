@@ -202,15 +202,8 @@ ul{
   list-style-type:none;
 }
 small{
-  font-size:14px;
-  font-size:0.875rem;
   font-size:14.222px;
   font-size:0.88889rem;
-}
-@media (min-width: calc(50 * 1em)){
-  small{
-    font-size:calc(0.88889rem + 300vw - 0.375em);
-  }
 }
 code, pre{
   font-family:'Menlo', monospace;
@@ -884,11 +877,6 @@ q::before, q::after, blockquote::before, blockquote::after{
 .u-font-size--small{
   font-size:14.222px;
   font-size:0.88889rem;
-}
-@media (min-width: calc(50 * 1em)){
-  .u-font-size--small{
-    font-size:calc(0.875rem + 300vw - 0.375em);
-  }
 }
 .u-font-size--scalen1{ font-size:14.222px; font-size:0.88889rem; }
 .u-font-size--scale0{ font-size:16px; font-size:1rem; }
