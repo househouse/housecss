@@ -18,6 +18,7 @@
   --type--base: var(--unit);
   --type--ratio: var(--ratio);
 
+  --type--scalen1: calc(var(--type--scale0) / var(--type--ratio));
   --type--scale0: var(--type--base); /* 16px */
   --type--scale1: calc(var(--type--ratio) * var(--type--scale0));
   --type--scale2: calc(var(--type--ratio) * var(--type--scale1));
@@ -100,17 +101,16 @@
     font-size: var(--type--scale0);
 
     @media (--medium-up) {
-      font-size: calc(var(--type--base) + 3 * calc(100vw - var(--area--medium)) / 400);
+      font-size: calc(var(--type--scale0) + 3 * calc(100vw - var(--area--medium)) / 400);
     }
   }
 
   --type--small {
-    font-size: calc(var(--type--scale0) / var(--type--ratio));
+    font-size: var(--type--scalen1);
 
     @media (--medium-up) {
       font-size: calc(
-        calc(var(--type--base) / var(--type--ratio)) + 3 * calc(100vw - var(--area--medium) / 400
-        );
+        calc(var(--type-scalen1) + 3 * calc(100vw - var(--area--medium) / 400);
     }
   }
 

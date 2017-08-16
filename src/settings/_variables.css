@@ -17,8 +17,8 @@
   --font--secondary: 'Georgia', serif;
   --font--code: 'Menlo', monospace;
 
-  /* Set your desired type weights */
-  --font--weight: 300;
+  /* Set your desired default type weights */
+  --font--weight-default: 300;
   --font--weight-bold: 700;
 
   /* Set your font-leading */
@@ -33,9 +33,10 @@
   --space-xl: calc(4 * var(--unit));
 
   /* Content Area Variables */
-  --area--narrow: calc(30 * var(--unit));
-  --area--medium: calc(50 * var(--unit));
-  --area--wide: calc(70 * var(--unit));
+  /* Use em units here to accomodate client zoom preferences */
+  --area--narrow: calc(30 * 1em);
+  --area--medium: calc(50 * 1em);
+  --area--wide: calc(70 * 1em);
 
   /* Colors */
   --black: #1a1d20;
