@@ -12,7 +12,7 @@
 body {
   color: var(--color--primary);
   font-family: var(--font--primary);
-  font-weight: var(--font--weight);
+  font-weight: var(--font--weight--default);
   line-height: var(--font--leading);
 
   -webkit-font-smoothing: antialiased;

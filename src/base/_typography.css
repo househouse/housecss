@@ -32,7 +32,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font--secondary);
-  font-weight: var(--font--weight);
+  font-weight: var(--font--weight--default);
   line-height: var(--font--leading-tight);
 }
 
