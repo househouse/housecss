@@ -6,6 +6,6 @@
   */
 
 @custom-media --small-only (max-width: calc(30 * 1em));
-@custom-media --small-up (min-width: calc(50 * 1em));
+@custom-media --small-up (min-width: calc(30 * 1em));
 @custom-media --medium-up (min-width: calc(50 * 1em));
 @custom-media --large-up (min-width: calc(70 * 1em));
