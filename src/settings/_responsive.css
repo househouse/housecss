@@ -5,7 +5,7 @@
   * https://github.com/MoOx/postcss-cssnext/issues/253
   */
 
-@custom-media --small-only (width < calc(30 * 1em));
-@custom-media --small-up (width > calc(50 * 1em));
-@custom-media --medium-up (width > calc(50 * 1em));
-@custom-media --large-up (width > calc(70 * 1em));
+@custom-media --small-only (max-width: calc(30 * 1em));
+@custom-media --small-up (min-width: calc(50 * 1em));
+@custom-media --medium-up (min-width: calc(50 * 1em));
+@custom-media --large-up (min-width: calc(70 * 1em));

@@ -88,7 +88,7 @@ small {
   font-size: var(--type--scalen1, 0.875rem);
 
   @media (--medium-up) {
-    font-size: calc(var(--type-scalen1) + 3 * calc(100vw - var(--area--medium) / 400));
+    font-size: calc( var(--type--scalen1) + 3 * calc(100vw - var(--area--medium) / 400));
   }
 }
 
