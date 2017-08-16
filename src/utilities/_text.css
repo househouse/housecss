@@ -91,17 +91,13 @@
 }
 .u-font-size--body {
   font-size: var(--type--scale0);
-
-  @media (--medium-up) {
-    font-size: calc(var(--type--scale0) + 3 * calc(100vw - var(--area--medium)) / 400);
-  }
 }
 .u-font-size--small {
   font-size: var(--type--scalen1);
 }
 
 /* These don't with screen size */
-.u-font-size--scalen1 { font-size: var(--type--scalen1); }
+.u-font-size--scalen1 { font-size: 0.875rem; }
 .u-font-size--scale0 { font-size: var(--type--scale0); }
 .u-font-size--scale1 { font-size: var(--type--scale1); }
 .u-font-size--scale2 { font-size: var(--type--scale2); }
