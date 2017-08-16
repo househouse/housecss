@@ -2,10 +2,10 @@
   "name": "housecss",
   "version": "2.0.0",
   "description": "A Functional CSS library for rapid-iteration",
-  "styles": "src/main.scss",
+  "styles": "src/housecss.css",
   "scripts": {
-    "build": "postcss -c postcss.config.js",
-    "minify": "postcss -u cssnano css/housecss.css -o css/housecss.min.css",
+    "build": "postcss src/housecss.css -od css/",
+    "minify": "cleancss -o css/housecss.min.css css/housecss.css",
     "test": "test"
   },
   "repository": {
@@ -30,11 +30,13 @@
     "postcss": "^6.0.8",
     "postcss-cli": "^4.1.0",
     "postcss-cssnext": "^3.0.2",
+    "postcss-discard-comments": "^2.0.4",
     "postcss-import": "^10.0.0",
-    "postcss-loader": "^2.0.6",
     "postcss-remove-root": "0.0.2",
     "postcss-reporter": "^5.0.0",
-    "style-loader": "^0.18.2",
-    "webpack": "^3.5.3"
+    "precss": "^2.0.0"
+  },
+  "dependencies": {
+    "clean-css-cli": "^4.1.6"
   }
 }
