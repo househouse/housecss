@@ -4,7 +4,7 @@
   "description": "A Functional CSS library for rapid-iteration",
   "styles": "src/housecss.min.css",
   "main": "src/housecss.css",
-  "files" : [
+  "files": [
     "css",
     "src"
   ],
@@ -51,9 +51,7 @@
     "postcss-import": "^10.0.0",
     "postcss-remove-root": "0.0.2",
     "postcss-reporter": "^5.0.0",
-    "precss": "^2.0.0"
-  },
-  "dependencies": {
+    "precss": "^2.0.0",
     "clean-css-cli": "^4.1.6"
   }
 }
