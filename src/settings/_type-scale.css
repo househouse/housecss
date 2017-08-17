@@ -1,0 +1,30 @@
+/* Typographic scale */
+/* ========== */
+
+/**
+  * “The simplest scale is a single note, and sticking with a single note draws
+  *  more attention to other parameters, such as rhythm and inflection... In the
+  * sixteenth century, a series of common sizes developed among European
+  * typographers, and the series survived with little change and few additions
+  * for 400 years... This is the typographic equivalent of the diatonic scale.”
+  * -- Robert Bringhurst - The Elements of Typographic Style
+  *
+  **/
+
+/* Type scale variables */
+
+:root {
+  --type--base: var(--unit);
+  --type--ratio: var(--ratio);
+
+  --type--scalen1: calc(var(--type--scale0) / var(--type--ratio));
+  --type--scale0: var(--type--base); /* 16px */
+  --type--scale1: calc(var(--type--ratio) * var(--type--scale0));
+  --type--scale2: calc(var(--type--ratio) * var(--type--scale1));
+  --type--scale3: calc(var(--type--ratio) * var(--type--scale2));
+  --type--scale4: calc(var(--type--ratio) * var(--type--scale3));
+  --type--scale5: calc(var(--type--ratio) * var(--type--scale4));
+  --type--scale6: calc(var(--type--ratio) * var(--type--scale5));
+  --type--scale7: calc(var(--type--ratio) * var(--type--scale6));
+
+}

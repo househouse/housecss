@@ -1,0 +1,109 @@
+/* Global typography styles */
+/* ========== */
+
+h1 {
+  font-size: var(--type--scale5);
+
+  @media (--small-up) { font-size: var(--type--scale6); }
+
+  @media (--medium-up) { font-size: var(--type--scale7); }
+}
+
+h2 {
+  font-size: var(--type--scale4);
+
+  @media (--small-up) {
+    font-size: var(--type--scale5);
+  }
+
+  @media (--medium-up) {
+    font-size: var(--type--scale6);
+  }
+}
+
+h3 {
+  font-size: var(--type--scale3);
+
+  @media (--small-up) {
+    font-size: var(--type--scale4);
+  }
+
+  @media (--medium-up) {
+    font-size: var(--type--scale5);
+  }
+}
+
+h4 {
+  font-size: var(--type--scale2);
+
+  @media (--small-up) {
+    font-size: var(--type--scale3);
+  }
+
+  @media (--medium-up) {
+    font-size: var(--type--scale4);
+  }
+}
+
+h5 {
+  font-size: var(--type--scale1);
+
+  @media (--small-up) {
+    font-size: var(--type--scale2);
+  }
+
+  @media (--medium-up) {
+    font-size: var(--type--scale3);
+  }
+}
+
+h6 {
+  font-size: var(--type--scale0);
+
+  @media (--small-up) {
+    font-size: var(--type--scale1);
+  }
+
+  @media (--medium-up) {
+    font-size: var(--type--scale2);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font--secondary);
+  font-weight: var(--font--weight--default, 300);
+  line-height: var(--font--leading-tight);
+}
+
+ul {
+  list-style-type: none;
+}
+
+small {
+  font-size: var(--type--scalen1);
+}
+
+code,
+pre {
+  font-family: var(--font--code);
+}
+
+a {
+  color: var(--color-accent, #49a1dc);
+  text-decoration: none;
+}
+
+q,
+blockquote {
+  quote: none;
+
+  &::before,
+  &::after {
+    content: '';
+  }
+}

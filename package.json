@@ -1,0 +1,57 @@
+{
+  "name": "housecss",
+  "version": "2.0.0",
+  "description": "A Functional CSS library for rapid-iteration",
+  "styles": "src/housecss.min.css",
+  "main": "src/housecss.css",
+  "files": [
+    "css",
+    "src"
+  ],
+  "scripts": {
+    "build": "postcss src/housecss.css -od css/",
+    "minify": "cleancss -o css/housecss.min.css css/housecss.css",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/househouse/housecss.git"
+  },
+  "keywords": [
+    "functional css",
+    "css",
+    "framework",
+    "oocss"
+  ],
+  "author": "House House Design (house-house.design)",
+  "contributors": [
+    {
+      "name": "Sean Durfee",
+      "email": "sean@house-house.design",
+      "url": "http://durfee.me"
+    },
+    {
+      "name": "Ben Groulx",
+      "email": "ben@house-house.design",
+      "url": "http://bengroulx.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/househouse/housecss/issues"
+  },
+  "homepage": "https://github.com/househouse/housecss#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.4",
+    "cssnano": "^3.10.0",
+    "postcss": "^6.0.8",
+    "postcss-cli": "^4.1.0",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-discard-comments": "^2.0.4",
+    "postcss-import": "^10.0.0",
+    "postcss-remove-root": "0.0.2",
+    "postcss-reporter": "^5.0.0",
+    "precss": "^2.0.0",
+    "clean-css-cli": "^4.1.6"
+  }
+}

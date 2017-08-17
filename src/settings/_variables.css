@@ -1,0 +1,109 @@
+/* Project-Wide Configurable Variables */
+/* ========== */
+/* Note: The :root is removed on compile to make sure it doesn't overlap with any custom options */
+
+:root {
+  /* Set your base units and type ratio */
+  --unit: 1rem;
+  --ratio: 1.125;
+
+  /* Set the colours of your entire project */
+  --color--primary: var(--black); /* Foreground colour (i.e. text)*/
+  --color--secondary: var(--gray0); /* Background colour (i.e. bg) */
+  --color--accent: var(--blue);
+
+  /* Set your base typographic styles */
+  --font--primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  --font--secondary: 'Georgia', serif;
+  --font--code: 'Menlo', monospace;
+
+  /* Set your desired default type weights */
+  --font--weight-default: 300;
+  --font--weight-bold: 700;
+
+  /* Set your font-leading */
+  --font--leading: var(--ratio);
+  --font--leading-tight: calc(1.42222 * var(--ratio));
+
+  /* Space variables */
+  --space-xs: calc(0.25 * var(--unit));
+  --space-sm: calc(0.5 * var(--unit));
+  --space-md: calc(1 * var(--unit));
+  --space-lg: calc(2 * var(--unit));
+  --space-xl: calc(4 * var(--unit));
+
+  /* Content Area Variables */
+  /* Use em units here to accomodate client zoom preferences */
+  --area--narrow: calc(30 * 1em);
+  --area--medium: calc(50 * 1em);
+  --area--wide: calc(70 * 1em);
+
+  /* Colors */
+  --black: #1a1d20;
+  --white: #f5ffff;
+
+  --gray0: #f8f9f9;
+  --gray1: #ebedee;
+  --gray2: #dee1e3;
+  --gray3: #cfd3d6;
+  --gray4: #bec4c8;
+  --gray5: #acb4b9;
+  --gray6: #97a1a7;
+  --gray7: #7f8a93;
+  --gray8: #5f6e78;
+  --gray9: #374047;
+
+  --red--lighter: #fbeaeb;
+  --red--light: #f1b7bd;
+  --red: #e26975;
+  --red--dark: #ba0013;
+  --red--darker: #62000a;
+
+  --orange--lighter: #f9ede4;
+  --orange--light: #edc2a5;
+  --orange: #dc854b;
+  --orange--dark: #b94a00;
+  --orange--darker: #5f2500;
+
+  --yellow--lighter: #f8f6de;
+  --yellow--light: #eae194;
+  --yellow: #d8c838;
+  --yellow--dark: #baa700;
+  --yellow--darker: #615700;
+
+  --green--lighter: #e6f9e4;
+  --green--light: #abeda3;
+  --green: #56db47;
+  --green--dark: #13ba00;
+  --green--darker: #0a6200;
+
+  --teal--lighter: #e3f9ec;
+  --teal--light: #a3edc0;
+  --teal: #47db82;
+  --teal--dark: #00ba4a;
+  --teal--darker: #006227;
+
+  --cyan--lighter: #e3f9f7;
+  --cyan--light: #a1ece5;
+  --cyan: #44dbcb;
+  --cyan--dark: #00baa7;
+  --cyan9--darker: #006258;
+
+  --blue--lighter: #e4f1f9;
+  --blue--light: #a4d0ed;
+  --blue: #49a1dc;
+  --blue--dark: #006fb9;
+  --blue--darker: #00395f;
+
+  --violet--lighter: #f0e9fa;
+  --violet--light: #cdb6f1;
+  --violet: #9767e1;
+  --violet--dark: #4a00b9;
+  --violet--darker: #26005f;
+
+  --fuschia--lighter: #f9e9fa;
+  --fuschia--light: #eab5f0;
+  --fuschia: #d465e1;
+  --fuschia--dark: #a700ba;
+  --fuschia--darker: #570061;
+}
