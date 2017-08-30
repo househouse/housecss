@@ -1,6 +1,6 @@
 {
   "name": "housecss",
-  "version": "2.1.2",
+  "version": "2.2.0",
   "description": "A Functional CSS library for rapid-iteration",
   "styles": "css/housecss.min.css",
   "main": "css/housecss.css",
