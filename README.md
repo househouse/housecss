@@ -4,8 +4,15 @@
 A Functional CSS Library Built for Rapid Iteration. Created and maintained by
 the [House House](http://house-house.design/) folks — [@bengroulx](https://github.com/bengroulx) and [@durfee](https://github.com/durfee/).
 
-```
+## Usage
+Via npm: (yarn coming soon)
+```bash
 $ npm install --save housecss
+```
+
+via unpkg:
+```html
+<link rel="stylesheet" href="https://unpkg.com/housecss@2.0.2/css/housecss.min.css">
 ```
 
 ## Using the Framework
