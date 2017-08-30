@@ -113,12 +113,12 @@ h1{
   font-size:28.832px;
   font-size:1.80204rem;
 }
-@media (min-width: calc(30 * 1em)){
+@media (min-width: 30em){
   h1{
     font-size:2.0273rem;
   }
 }
-@media (min-width: calc(50 * 1em)){
+@media (min-width: 50em){
   h1{
     font-size:2.28071rem;
   }
@@ -127,12 +127,12 @@ h2{
   font-size:25.628px;
   font-size:1.60181rem;
 }
-@media (min-width: calc(30 * 1em)){
+@media (min-width: 30em){
   h2{
     font-size:1.80204rem;
   }
 }
-@media (min-width: calc(50 * 1em)){
+@media (min-width: 50em){
   h2{
     font-size:2.0273rem;
   }
@@ -141,12 +141,12 @@ h3{
   font-size:22.781px;
   font-size:1.42383rem;
 }
-@media (min-width: calc(30 * 1em)){
+@media (min-width: 30em){
   h3{
     font-size:1.60181rem;
   }
 }
-@media (min-width: calc(50 * 1em)){
+@media (min-width: 50em){
   h3{
     font-size:1.80204rem;
   }
@@ -155,12 +155,12 @@ h4{
   font-size:20.25px;
   font-size:1.26563rem;
 }
-@media (min-width: calc(30 * 1em)){
+@media (min-width: 30em){
   h4{
     font-size:1.42383rem;
   }
 }
-@media (min-width: calc(50 * 1em)){
+@media (min-width: 50em){
   h4{
     font-size:1.60181rem;
   }
@@ -169,12 +169,12 @@ h5{
   font-size:18px;
   font-size:1.125rem;
 }
-@media (min-width: calc(30 * 1em)){
+@media (min-width: 30em){
   h5{
     font-size:1.26563rem;
   }
 }
-@media (min-width: calc(50 * 1em)){
+@media (min-width: 50em){
   h5{
     font-size:1.42383rem;
   }
@@ -183,12 +183,12 @@ h6{
   font-size:16px;
   font-size:1rem;
 }
-@media (min-width: calc(30 * 1em)){
+@media (min-width: 30em){
   h6{
     font-size:1.125rem;
   }
 }
-@media (min-width: calc(50 * 1em)){
+@media (min-width: 50em){
   h6{
     font-size:1.26563rem;
   }
@@ -295,17 +295,17 @@ q::before, q::after, blockquote::before, blockquote::after{
 .u-hidden{
   display:none !important;
 }
-@media(max-width: calc(30 * 1em)){
+@media(max-width: 30em){
   .u-hidden--small-only{
     display:none !important;
   }
 }
-@media(min-width: calc(30 * 1em)){
+@media(min-width: 30em){
   .u-hidden--small-up{
     display:none !important;
   }
 }
-@media(min-width: calc(50 * 1em)){
+@media(min-width: 50em){
   .u-hidden--medium-up{
     display:none !important;
   }
@@ -331,10 +331,10 @@ q::before, q::after, blockquote::before, blockquote::after{
       -ms-flex-direction:row;
           flex-direction:row;
 }
-@media (min-width: calc(30 * 1em)){
+@media (min-width: 30em){
   .u-flexbox--small-up{ display:-webkit-box; display:-ms-flexbox; display:flex; }
 }
-@media (min-width: calc(50 * 1em)){
+@media (min-width: 50em){
   .u-flexbox--medium-up{ display:-webkit-box; display:-ms-flexbox; display:flex; }
 }
 .u-flex-column{ -webkit-box-orient:vertical; -webkit-box-direction:normal; -ms-flex-direction:column; flex-direction:column; }
@@ -380,7 +380,7 @@ q::before, q::after, blockquote::before, blockquote::after{
 .u-height-1of2vh, .u-height-halfvh{ height:50vh; }
 .u-height-2of3vh{ height:66.66667; }
 .u-height-fullvh{ height:100vh; }
-@media (min-width: calc(30 * 1em)){
+@media (min-width: 30em){
   .u-width-0--small-up{ width:0%; }
   .u-width-1of4--small-up{ width:25%; }
   .u-width-1of3--small-up{ width:33.33333%; }
@@ -408,7 +408,7 @@ q::before, q::after, blockquote::before, blockquote::after{
   .u-height-2of3vh--small-up{ height:66.66667vh; }
   .u-height-fullvh--small-up{ height:100vh; }
 }
-@media (min-width: calc(50 * 1em)){
+@media (min-width: 50em){
   .u-width-0--medium-up{ width:0%; }
   .u-width-1of4--medium-up{ width:25%; }
   .u-width-1of3--medium-up{ width:33.33333%; }
@@ -445,7 +445,7 @@ q::before, q::after, blockquote::before, blockquote::after{
 .u-measure-wide{
   max-width:calc(70em - 10rem);
 }
-@media (max-width: calc(30 * 1em)){
+@media (max-width: 30em){
   .u-measure-narrow--small-only{
     max-width:calc(30em - 10rem);
   }
@@ -456,7 +456,7 @@ q::before, q::after, blockquote::before, blockquote::after{
     max-width:calc(70em - 10rem);
   }
 }
-@media (min-width: calc(30 * 1em)){
+@media (min-width: 30em){
   .u-measure-narrow--small-up{
     max-width:calc(30em - 10rem);
   }
@@ -467,7 +467,7 @@ q::before, q::after, blockquote::before, blockquote::after{
     max-width:calc(70em - 10rem);
   }
 }
-@media (min-width: calc(50 * 1em)){
+@media (min-width: 50em){
   .u-measure-narrow--medium-up{
     max-width:calc(30em - 10rem);
   }
@@ -520,7 +520,7 @@ q::before, q::after, blockquote::before, blockquote::after{
 .u-padding-left-xl{ padding-left:64px; padding-left:4rem; }
 .u-padding-x-xl{ padding-left:64px; padding-left:4rem; padding-right:64px; padding-right:4rem; }
 .u-padding-y-xl{ padding-top:64px; padding-top:4rem; padding-bottom:64px; padding-bottom:4rem; }
-@media (min-width: calc(30 * 1em)){
+@media (min-width: 30em){
   .u-padding-0--small-up{ padding:0; }
   .u-padding-top-0--small-up{ padding-top:0; }
   .u-padding-right-0--small-up{ padding-right:0; }
@@ -569,7 +569,7 @@ q::before, q::after, blockquote::before, blockquote::after{
   .u-padding-x-xl--small-up{ padding-left:4rem; padding-right:4rem; }
   .u-padding-y-xl--small-up{ padding-top:4rem; padding-bottom:4rem; }
 }
-@media (min-width: calc(50 * 1em)){
+@media (min-width: 50em){
   .u-padding-0--medium-up{ padding:0; }
   .u-padding-top-0--medium-up{ padding-top:0; }
   .u-padding-right-0--medium-up{ padding-right:0; }
@@ -660,7 +660,7 @@ q::before, q::after, blockquote::before, blockquote::after{
 .u-margin-left-xl{ margin-left:64px; margin-left:4rem; }
 .u-margin-x-xl{ margin-left:64px; margin-left:4rem; margin-right:64px; margin-right:4rem; }
 .u-margin-y-xl{ margin-top:64px; margin-top:4rem; margin-bottom:64px; margin-bottom:4rem; }
-@media (min-width: calc(30 * 1em)){
+@media (min-width: 30em){
   .u-margin-0--small-up{ margin:0; }
   .u-margin-top-0--small-up{ margin-top:0; }
   .u-margin-right-0--small-up{ margin-right:0; }
@@ -709,7 +709,7 @@ q::before, q::after, blockquote::before, blockquote::after{
   .u-margin-x-xl--small-up{ margin-left:4rem; margin-right:4rem; }
   .u-margin-y-xl--small-up{ margin-top:4rem; margin-bottom:4rem; }
 }
-@media (min-width: calc(50 * 1em)){
+@media (min-width: 50em){
   .u-margin-0--medium-up{ margin:0; }
   .u-margin-top-0--medium-up{ margin-top:0; }
   .u-margin-right-0--medium-up{ margin-right:0; }
@@ -773,12 +773,12 @@ q::before, q::after, blockquote::before, blockquote::after{
   font-size:28.832px;
   font-size:1.80204rem;
 }
-@media (min-width: calc(30 * 1em)){
+@media (min-width: 30em){
   .u-font-size--h1{
     font-size:2.0273rem;
   }
 }
-@media (min-width: calc(50 * 1em)){
+@media (min-width: 50em){
   .u-font-size--h1{
     font-size:2.28071rem;
   }
@@ -787,12 +787,12 @@ q::before, q::after, blockquote::before, blockquote::after{
   font-size:25.628px;
   font-size:1.60181rem;
 }
-@media (min-width: calc(30 * 1em)){
+@media (min-width: 30em){
   .u-font-size--h2{
     font-size:1.80204rem;
   }
 }
-@media (min-width: calc(50 * 1em)){
+@media (min-width: 50em){
   .u-font-size--h2{
     font-size:2.0273rem;
   }
@@ -801,12 +801,12 @@ q::before, q::after, blockquote::before, blockquote::after{
   font-size:22.781px;
   font-size:1.42383rem;
 }
-@media (min-width: calc(30 * 1em)){
+@media (min-width: 30em){
   .u-font-size--h3{
     font-size:1.60181rem;
   }
 }
-@media (min-width: calc(50 * 1em)){
+@media (min-width: 50em){
   .u-font-size--h3{
     font-size:1.80204rem;
   }
@@ -815,12 +815,12 @@ q::before, q::after, blockquote::before, blockquote::after{
   font-size:20.25px;
   font-size:1.26563rem;
 }
-@media (min-width: calc(30 * 1em)){
+@media (min-width: 30em){
   .u-font-size--h4{
     font-size:1.42383rem;
   }
 }
-@media (min-width: calc(50 * 1em)){
+@media (min-width: 50em){
   .u-font-size--h4{
     font-size:1.60181rem;
   }
@@ -829,12 +829,12 @@ q::before, q::after, blockquote::before, blockquote::after{
   font-size:18px;
   font-size:1.125rem;
 }
-@media (min-width: calc(30 * 1em)){
+@media (min-width: 30em){
   .u-font-size--h5{
     font-size:1.26563rem;
   }
 }
-@media (min-width: calc(50 * 1em)){
+@media (min-width: 50em){
   .u-font-size--h5{
     font-size:1.42383rem;
   }
@@ -843,12 +843,12 @@ q::before, q::after, blockquote::before, blockquote::after{
   font-size:16px;
   font-size:1rem;
 }
-@media (min-width: calc(30 * 1em)){
+@media (min-width: 30em){
   .u-font-size--h6{
     font-size:1.125rem;
   }
 }
-@media (min-width: calc(50 * 1em)){
+@media (min-width: 50em){
   .u-font-size--h6{
     font-size:1.26563rem;
   }
