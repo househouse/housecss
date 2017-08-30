@@ -870,3 +870,14 @@ q::before, q::after, blockquote::before, blockquote::after{
 .u-font-size--scale5{ font-size:28.832px; font-size:1.80204rem; }
 .u-font-size--scale6{ font-size:32.436px; font-size:2.0273rem; }
 .u-font-size--scale7{ font-size:36.491px; font-size:2.28071rem; }
+.u-font-family--primary{
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+}
+.u-font-family--secondary{
+  font-family:'Georgia', serif;
+}
+.u-font-family--monospace{
+  font-family:'Menlo', monospace;
+}
+.u-text-align--center{ text-align:center; }
+.u-text-align--right{ text-align:right; }

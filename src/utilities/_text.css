@@ -67,6 +67,7 @@
     font-size: var(--type--scale4);
   }
 }
+
 .u-font-size--h5 {
   font-size: var(--type--scale1);
 
@@ -78,6 +79,7 @@
     font-size: var(--type--scale3);
   }
 }
+
 .u-font-size--h6 {
   font-size: var(--type--scale0);
 
@@ -89,6 +91,7 @@
     font-size: var(--type--scale2);
   }
 }
+
 .u-font-size--body {
   font-size: var(--type--scale0);
 }
@@ -106,3 +109,21 @@
 .u-font-size--scale5 { font-size: var(--type--scale5); }
 .u-font-size--scale6 { font-size: var(--type--scale6); }
 .u-font-size--scale7 { font-size: var(--type--scale7); }
+
+/* Font Families */
+
+.u-font-family--primary {
+  font-family: var(--font--primary);
+}
+
+.u-font-family--secondary {
+  font-family: var(--font--secondary);
+}
+
+.u-font-family--monospace {
+  font-family: var(--font--code);
+}
+
+/* Text align */
+.u-text-align--center { text-align: center; }
+.u-text-align--right { text-align: right; }

@@ -34,9 +34,9 @@
 
   /* Content Area Variables */
   /* Use em units here to accomodate client zoom preferences */
-  --area--narrow: calc(30 * 1em);
-  --area--medium: calc(50 * 1em);
-  --area--wide: calc(70 * 1em);
+  --area--narrow: 30em;
+  --area--medium: 50em;
+  --area--wide: 70em;
 
   /* Colors */
   --black: #1a1d20;
