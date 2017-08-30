@@ -12,7 +12,7 @@ $ npm install --save housecss
 
 via unpkg:
 ```html
-<link rel="stylesheet" href="https://unpkg.com/housecss@2.0.2/css/housecss.min.css">
+<link rel="stylesheet" href="https://unpkg.com/housecss@latest/css/housecss.min.css">
 ```
 
 ## Using the Framework
